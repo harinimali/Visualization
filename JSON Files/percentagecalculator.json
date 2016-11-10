@@ -1,0 +1,31 @@
+{
+  "application": {
+    "packageName": "info.percentagecalculator.v1",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "info.percentagecalculator.v1.PercentageCalculator",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "ACCESS_NETWORK_STATE",
+        "INTERNET"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Percentage Calculator v1.apk",
+    "name": "Percentage Calculator v1"
+  }
+}

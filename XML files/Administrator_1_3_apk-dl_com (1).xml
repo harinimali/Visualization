@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.mascasobacos.administrator</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>com.mascasobacos.administrator.AdministratorActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.google.ads.AdActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>ACCESS_NETWORK_STATE</permission>
+        <permission>INTERNET</permission>
+        <permission>CHANGE_WIFI_STATE</permission>
+        <permission>CHANGE_NETWORK_STATE</permission>
+        <permission>BLUETOOTH</permission>
+        <permission>BLUETOOTH_ADMIN</permission>
+        <permission>ACCESS_WIFI_STATE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>CHANGE_WIFI_STATE</permission>
+        <permission>BLUETOOTH</permission>
+        <permission>BLUETOOTH_ADMIN</permission>
+        <permission>ACCESS_NETWORK_STATE</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/appbundle/Administrator_1.3_apk-dl.com (1).apk</apkFile>
+    <name>Administrator_1_3_apk-dl_com (1)</name>
+</application>

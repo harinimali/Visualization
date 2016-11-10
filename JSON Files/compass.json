@@ -1,0 +1,335 @@
+{
+  "application": {
+    "packageName": "tntstudio.supercompass",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "tntstudio.supercompass.MainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "tntstudio.supercompass.Compass_type"
+        },
+        {
+          "type": "activity",
+          "name": "tntstudio.supercompass.AdsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "tntstudio.supercompass.k: void onClick(android.content.DialogInterface,int)",
+          "sender": "tntstudio.supercompass.k",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "aoekqhqdjjmh4gqh2jqjtir1c8"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: void onBackPressed()",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "component": "tntstudio.supercompass.AdsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "is6nlfv9kuma6m0l7kpo4q7ghq"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: void onBackPressed()",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "component": "tntstudio.supercompass.AdsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ocosegq709o5pv8v9in6p291f7"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "k0hl7b4o0drp9grb8idjioipjq"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.i: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "k83vee1jl5vl26fs1gmeqebu85"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.g: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.g",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "627pts1rdkmeqqeg922t5hh611"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.i: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ie0286rbigodt5pn3plb8pgjqe"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "s3ha7q9899ghnpmbgp40e5j9io"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.AdsActivity: void a(java.lang.String)",
+          "sender": "tntstudio.supercompass.AdsActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t3mg2jjctm30c82s2moocvr6r"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.h: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.h",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "gedv5ponn3nqhq2bkp4hjbbo82"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.i: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "6dob0qf0dute2fmrvht5pk8209"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.g: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.g",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "1ojcmjkdvi2svfdje8ungnq69q"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.h: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.h",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "fp3u0k6n2oel0b6i4c4oiehepd"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.AdsActivity: void a(java.lang.String)",
+          "sender": "tntstudio.supercompass.AdsActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qvftp0vftqvs7s1v2c1djh99j3"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fm5gm66asnr6vk7vtpg089s8bo"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.h: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.h",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "h2k8h6g5rl9s9oimopuv11j38b"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.i: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "1b8nqmledm9ha5kscail9gcho0"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vij12tbl1lgqn1l2p64qj0npd6"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: void onBackPressed()",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "component": "tntstudio.supercompass.AdsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "eehp23s2961fm3pmhjpv731mmk"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.f: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.f",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "2c53ul9b62alqes9vmts8gnp17"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.k: void onClick(android.content.DialogInterface,int)",
+          "sender": "tntstudio.supercompass.k",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "216jlantrosjnjd0ug1jbit4g4"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.k: void onClick(android.content.DialogInterface,int)",
+          "sender": "tntstudio.supercompass.k",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "36vla7lvg1ag13rvckjrmpb3iv"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.MainActivity: void onBackPressed()",
+          "sender": "tntstudio.supercompass.MainActivity",
+          "component": "tntstudio.supercompass.AdsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "eoej58btcr953q14pr3dk92loo"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.f: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.f",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "7qb3ptbsfmehb6lr6s8vsire26"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.AdsActivity: void a(java.lang.String)",
+          "sender": "tntstudio.supercompass.AdsActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "imhnvcra9l680p2pup59h4fcm0"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.h: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.h",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "dmb136pcsku2sedtd3b0mgi236"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.g: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.g",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "3us51qi3lud92tn5ma6krhuude"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.f: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.f",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nns3tliov0i3v2pjh2vf8ab7kb"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.f: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.f",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "vfnp22v72pcbvnfktsd1a487dq"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.g: void onClick(android.view.View)",
+          "sender": "tntstudio.supercompass.g",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "t9et8k98cej7tvj3tjpg3nib7s"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.k: void onClick(android.content.DialogInterface,int)",
+          "sender": "tntstudio.supercompass.k",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "b6qee51segfs5s084v704o65e9"
+        },
+        {
+          "calledAt": "tntstudio.supercompass.AdsActivity: void a(java.lang.String)",
+          "sender": "tntstudio.supercompass.AdsActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "golla6abrkee0dvej4m9ear2b8"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Compass for Android.apk",
+    "name": "Compass for Android"
+  }
+}

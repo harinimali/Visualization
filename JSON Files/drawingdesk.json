@@ -1,0 +1,1574 @@
+{
+  "application": {
+    "packageName": "com.axis.drawingdesk.v3",
+    "components": {
+      "Component": [
+          {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.applovin.adview.AppLovinInterstitialActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.applovin.adview.AppLovinConfirmationActivity"
+        },
+        
+        {
+          "type": "activity",
+          "name": "com.facebook.LoginActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.sketchdesk.task.FacebookTask"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.photodesk.PhotoDeskActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.doodledesk.DoodledeskActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.importmanager.FbImportActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.importmanager.FbPhotoGallery"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.importmanager.InstagramGallery"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.importmanager.InstaImportActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.axis.drawingdesk.market.MarketActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.vungle.publisher.FullScreenAdActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.amazon.device.ads.AdActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openTwitterPage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lfup12uflh3lhmj65qoqfjvedi"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "78ln8t735gei57c5m7pvmsuqim"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "component": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "eh541cmek5gn5vr0a6sml644e2"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void checkInstaLogin()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "n767a52n6hr9k8hvbk3i124gr1"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8b9no0jpvn9lecbg9av37mvurb"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "jngsekj8oecfash0l92m2i684f"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void checkInstaLogin()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "hsk0p51r804hsf25v2bsp733bl"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "v46fjf5b60f447kku3u0906etr"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "eqvfg18iv5fsk1r1mqlmvijkvn"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "kcur3u0snbl8uvfb5prk8knthm"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jngjv5r32jefdhhki29r1g5343"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.market.util.IabHelper: void startSetup(com.axis.drawingdesk.market.util.IabHelper$OnIabSetupFinishedListener)",
+          "sender": "com.axis.drawingdesk.market.util.IabHelper",
+          "action": "\"com.android.vending.billing.InAppBillingService.BIND\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "v80v1oap7n1dhdsk2acgd720md"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nnbufg5tfenraiq4bjpio6r3bu"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "d8rog9dplra12nmak7pm8rfopd"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.market.util.IabHelper: void startSetup(com.axis.drawingdesk.market.util.IabHelper$OnIabSetupFinishedListener)",
+          "sender": "com.axis.drawingdesk.market.util.IabHelper",
+          "action": "\"com.android.vending.billing.InAppBillingService.BIND\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "2udqhs7chchbqiq05rfuuc7h2i"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void facebookShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.task.FacebookTask",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "uceu4bo4aug73vvp75g9hmhj77"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openTwitterPage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rfduhkerpgkl8ae2l371jffrlc"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void facebookShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.task.FacebookTask",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "i35t861sssdrmij9f1rb9ph27k"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager: void notifyMediaScanner(java.io.File)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager",
+          "action": "\"android.intent.action.MEDIA_SCANNER_SCAN_FILE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "n7s49eokcl28hd54s569e1ahr"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "4peemonqddi57ejiu6p1orh7ca"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "4e9ffheckj9h2vopqd9cdcu1j2"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "component": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "p5c1qrumkc3g93t4l66c6a0ome"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vtbpkndm16cne3ves1f5sjgu5u"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.v3.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1d2apagi5bhmbesl63edcgors7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "component": "com.axis.drawingdesk.photodesk.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e6e0eblvlvfup33dptcgdtdqiv"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "h2bkppv9rf2p1thmjplubplh5c"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "ncsd2lpc7fe4es78fq050rgrm0"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "smvtjj2rngsqhvdn45s9tkm2ki"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a9j2n1l5i67jl0ivjtd5s4gf4s"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "vrh1fj2gcn4h59g8ro70ia3lsl"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "c4ad5cm57qpndfr27i02hajjrn"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void checkInstaLogin()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "2jcm1f7439lp17siv0ng4kg0ce"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "s6aah3k11q6tlhi02d0ap1hqu"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager: void notifyMediaScanner(java.io.File)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager",
+          "action": "\"android.intent.action.MEDIA_SCANNER_SCAN_FILE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "ov3927rbeeksm6341ds47kp22o"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "35e5m02pc3kk2s9pqubqb1redc"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openYoutubePage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8ueudcn5k9em30l35lbetfu12r"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "9lqkojo706fu64sa6cr5u4171u"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "2stu7dj8a3cs75i4or7phonj64"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void onSettingsSelected(int)",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "component": "com.axis.drawingdesk.market.MarketActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "phd7fcrpo8tj7vggq6df494g98"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openTwitterPage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "veo79734ddc21mh27h7cseemhd"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "component": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "thkl46tf9eiombbd83ga5q7l"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8kq9gjhtfdr9hb3ljd69qqua68"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void facebookShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.task.FacebookTask",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o9rkm2jnuu3rnm6j2ukpbobhbn"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void takePicture()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "quge0s8bt74hln11ml0oo6mdn7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "jt80csogo443bkd8v7rr2ptugr"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openYoutubePage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "41l98ckmhhaddfs1hcc42fi2l1"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "aol7o9uo9qc2svba3es635rar7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "c167b3lil03q0kqif9je07r7bs"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "a9mogumct0afm34e8ujip67r6b"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.market.util.IabHelper: void startSetup(com.axis.drawingdesk.market.util.IabHelper$OnIabSetupFinishedListener)",
+          "sender": "com.axis.drawingdesk.market.util.IabHelper",
+          "action": "\"com.android.vending.billing.InAppBillingService.BIND\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "hp9uliabbq0b0kj7v06sqobfhu"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ocfje40b2ocs8kurr48jjpvbr3"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "23kq2t94p0278dheigch2bfmci"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void takePicture()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "3mkic2upcoun40q63da4t089ob"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "ov0dnjv48rq2bq6bquk94fbrk1"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "kg7l32hif6sdh2j71pc4qt7arm"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ibbnkb5em0fjs4c1trd84uvvll"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "l3a3nil0qjpj11ja6icadfevll"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "jvr601cp6q62o33e6v24da5ko9"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9mj012159milegb5aquammvrsr"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "nisccee0jg0f9ov48lu0dbvatg"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.v3.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vbh85mg8jkqvq3091su32j8eu0"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "liqjiilcr2jc8jh353jl8oic22"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "n6qoit66lq5ebr3u5uf9s0ngk8"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void takePicture()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "s0i96jpj2kj1b102ojvqdi57di"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbPhotoGallery$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "6hcvgpgo1s260ib0dkkgv2hlt4"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "i0lgf4rplqaovh369bj0q8d42e"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hmb63rcf7rdn61nlkdig6jp8l0"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "73b71le9r1av5p8vnkbhahnova"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbPhotoGallery$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "4detdn3p1imuc07ib64rvgio74"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "dffrrsdtjqi28npok625td3e9"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "taatph1q9kgft98h240r2q6jq7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "component": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "5t95dhes053vidfgp72vdbmp6g"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.RateThisApp: void openMarket(android.content.Context)",
+          "sender": "com.axis.drawingdesk.components.RateThisApp",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t9edbavksu7gf8kfl94s17s6nc"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ushgl8qti6ru518q04j6gtqv6a"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "qpnav7pm2r252nq1vt2llq3e8r"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "grvo0jh8rla098ijvqk3o1o0bs"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void onSettingsSelected(int)",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "component": "com.axis.drawingdesk.market.MarketActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5oifq2g08dpho5c66phveahl5t"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "rkuc0sbu5s16bdnqrna5nifemm"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7henu96sr2dqokvrn71727ihm7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "tlt8dd3horqj7cd8fi59808pvo"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bps6h6kmje18auu5cmehimui22"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "enmtn7qs8edni7tjmn75b5fjsq"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void facebookShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.task.FacebookTask",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ofhaebhc75uvgt4sh1tno9jhj8"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbPhotoGallery$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "component": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "8du4s8nhmp4lmlubntttbburja"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "fvidqhkrtfqr5scr7c8rv3an90"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void takePicture()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "95d433nhnltd9630661doc3t08"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void checkInstaLogin()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "u8e08rsf13v2s6g2gkspnivtru"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "rfbqf4ete6gp8l6cbfdaos7kq9"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hdb8jgnidm44uegag1ki4vovba"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "uo0332vpc5jsqjtvib8cb0kphp"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vnpu4cc7hqvujhpjbus116jtls"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "dfm5tfop426lc7p1se450qpjrf"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "f7r6htcurudpmcn8br6v0nsni8"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "h9l41cgvh0bfvtrmeolp1kv4eu"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "vipgkl041dj47vf1q3rupkknv2"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "9ivk1k00vmn1ludp0ecf9se1u3"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "kvbkfaogp0vhpumco70d2lfmq6"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cvlanumr8lttunp8m70stj4763"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kdpckpbe6nsgjmsgf4pmc5a478"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "component": "com.axis.drawingdesk.photodesk.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e4tbmak0r1fqbubi9hv1icqalu"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9bth85vhn43evvmsgjcq3hg10i"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.RateThisApp: void openMarket(android.content.Context)",
+          "sender": "com.axis.drawingdesk.components.RateThisApp",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "v0kplo9h93jb0femjkkbrev51f"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openFbPage()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "l14m856runi8iv0o8nbirhtjpj"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "besj8kjrhp6rgrghfa3u42hn2u"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "uarne290ibpaut09doso01hvou"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "gfdbrtj1eafmq3eameh0a9tvfm"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "component": "com.axis.drawingdesk.photodesk.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o04598e49gha4jj53ds3i675h7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "90tkfkpfuvmtombssn7tsa5n6p"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ts9gaqkuternlhn7h7s0c7r1bj"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void onSettingsSelected(int)",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "component": "com.axis.drawingdesk.market.MarketActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kgjeiauibicvutd4ddt8akas0d"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void twitterShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/png\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ho1dqjs8lksl9cdkamvv023f"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "io1ttsg2rbth1cv5ue2cd4rp9n"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a97khbn6ptb3ms6ljqfat2ada0"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "hrb1odm9treepivj42i7852t3l"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jq6ab2shh1ofubb010pro3fqca"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "component": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "jp8gm26dlimv9qblr20beafd8h"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "2vmno72jl29co9eg0b08rmsrvf"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.RateThisApp: void openMarket(android.content.Context)",
+          "sender": "com.axis.drawingdesk.components.RateThisApp",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jlo5u9qms8fdeopo3cnj6aio2d"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "3gfga5lviu1kadfkd7l403is4v"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "action": "\"android.intent.action.PICK\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "hr6u9l89g5jqp3g5k2bnt9d4rf"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "srem77ksgj2air4eigl6084su"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "m269rlr7pnrkapgc68pt5gl27s"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager: void notifyMediaScanner(java.io.File)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager",
+          "action": "\"android.intent.action.MEDIA_SCANNER_SCAN_FILE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "q3q3d4fo97p55ck0r6jot6e7dt"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbImportActivity$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "component": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "v211tk97dlaej9b33g1u4va665"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "123a35to3lsle2qu0vv013flg2"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity: void onSettingsSelected(int)",
+          "sender": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "component": "com.axis.drawingdesk.market.MarketActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9kk4v71teb3hm05jgv2jnehsp8"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "5kmu6jg6f2ilppu5qqjp4gg5k"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "okdbglv0oido6taq1u1orjjpjk"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.kidsdesk.KidsDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "7v4uamsjmhscnjpd5fc3j1f9pp"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "component": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nof3cr6n48hlap9m6l25golkvv"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "component": "com.axis.drawingdesk.sketchdesk.managers.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8l8k3j8hcaoeudrpa7197bhtes"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "t1fs37sfqlpp3s6sfeeg6kll6"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openTwitterPage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "l14ctmfuigcbmm8rigmqmc3b72"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openYoutubePage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2hat4ivsqa56brvebbt7ffu5s9"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "component": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ijt0khdr1jcs7b2gmcpebbokin"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "ti0p5hqqcfd6jghbd8s4jbp33a"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstagramGallery: void onBackPressed()",
+          "sender": "com.axis.drawingdesk.importmanager.InstagramGallery",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "j0lokodrqadqteireqlu2umnau"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "5tr995thc7b1qaonls6639nqi8"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.InfoPopup: void openYoutubePage()",
+          "sender": "com.axis.drawingdesk.components.InfoPopup",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jnft8qlfs5nm40pn3hmstd93ul"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.v3.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rcf0q63favbk4j7731q6suj9u"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "component": "com.axis.drawingdesk.photodesk.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "phhrij0n8i1fjl63u68vdf0ab7"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "h0k0susn28g4sqcjap0rfadbmi"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.ShareManager: void emailShare(android.graphics.Bitmap)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.ShareManager",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"image/jpeg\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sr9j7ieu3tcf83fq01g503cotg"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.v3.",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jqalaegi2i5l0le1b95q0cqvc8"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.InstaImportActivity: void onActivityResult(int,int,android.content.Intent)",
+          "sender": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "k7efmeqmrvpv8jbgn2oce8dms3"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.market.util.IabHelper: void startSetup(com.axis.drawingdesk.market.util.IabHelper$OnIabSetupFinishedListener)",
+          "sender": "com.axis.drawingdesk.market.util.IabHelper",
+          "action": "\"com.android.vending.billing.InAppBillingService.BIND\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "8ddsvvghmbu9r96th02edm5bf6"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.components.RateThisApp: void openMarket(android.content.Context)",
+          "sender": "com.axis.drawingdesk.components.RateThisApp",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "k02pps5otdfcpmg9ctk726pppk"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.DoodledeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.doodledesk.DoodledeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "q1j83ma9osvrad4ckls73kh21m"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void openEmail()",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "action": "\"android.intent.action.SEND\"",
+          "dataType": "\"text/plain\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4ff8o2ibi09o69odaq6nb6li91"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.sketchdesk.SketchDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "rfiuh6mat22a2du85gnfhdt2gl"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager: void notifyMediaScanner(java.io.File)",
+          "sender": "com.axis.drawingdesk.sketchdesk.managers.FileIOManager",
+          "action": "\"android.intent.action.MEDIA_SCANNER_SCAN_FILE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "pbcqbm6jfcqmn0eid48duergqv"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.InstaImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "5kt7519fihf19s87s5cpv561ua"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ImportPopup: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.doodledesk.views.ImportPopup",
+          "component": "com.axis.drawingdesk.importmanager.FbImportActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "86l8fk67m4mjuggh5eqrgh8iat"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.importmanager.FbPhotoGallery$1$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.axis.drawingdesk.importmanager.FbPhotoGallery",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "a398u4ulotr0fqfsuorsrmph03"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.v3.DrawingDeskMainActivity: void onClick(android.view.View)",
+          "sender": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "component": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "nbn3vhug940juots3eibduf2n6"
+        },
+        {
+          "calledAt": "com.axis.drawingdesk.photodesk.PhotoDeskActivity: void finishWithResult()",
+          "sender": "com.axis.drawingdesk.photodesk.PhotoDeskActivity",
+          "component": "com.axis.drawingdesk.v3.DrawingDeskMainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "l4f6eu3eievj0fbekvcvcdvqti"
+        }
+      ]
+    },
+    "ContentProviders": {
+      "ContentProvider": [
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.axis.drawingdesk.doodledesk.views.ExportPopup: java.lang.String getRealPathFromURI(android.net.Uri)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.axis.drawingdesk.kidsdesk.views.ExportPopup: java.lang.String getRealPathFromURI(android.net.Uri)",
+          "exitOrEntry": "exit"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "BILLING",
+        "READ_PHONE_STATE",
+        "CAMERA",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Drawing Desk.apk",
+    "name": "Drawing Desk"
+  }
+}

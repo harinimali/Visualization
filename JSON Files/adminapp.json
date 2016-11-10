@@ -1,0 +1,44 @@
+{
+  "application": {
+    "packageName": "com.mascasobacos.administrator",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "com.mascasobacos.administrator.AdministratorActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.google.ads.AdActivity"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "CHANGE_WIFI_STATE",
+        "CHANGE_NETWORK_STATE",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "CHANGE_WIFI_STATE",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Administrator_1.3_apk-dl.com (1).apk",
+    "name": "Administrator_1_3_apk-dl_com (1)"
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "application": {
+    "packageName": "com.squaremed.diabetesconnect.android",
+    "components": {
+      "Component": [
+          {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.EintragActivity"
+        },
+        
+        {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.WizardActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.MainActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.ShowStacktraceActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.squaremed.diabetesconnect.android.activities.ShareActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.SEND",
+              "data": { "mimeType": "application/pdf" },
+              "categories": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "type": "service",
+          "name": "com.squaremed.diabetesconnect.android.services.SyncService"
+        },
+        {
+          "type": "receiver",
+          "name": "com.squaremed.diabetesconnect.android.receiver.ConfigChangedReceiver",
+          "IntentFilter": {
+            "filter": {
+              "actions": [
+                "android.intent.action.LOCALE_CHANGED",
+                "android.intent.action.TIME_SET",
+                "android.intent.action.TIMEZONE_CHANGED"
+              ]
+            }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.squaremed.diabetesconnect.android.services.NotificationService"
+        },
+        {
+          "type": "receiver",
+          "name": "com.squaremed.diabetesconnect.android.services.NotificationAlarmSetter",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.BOOT_COMPLETED" }
+          }
+        },
+        {
+          "type": "provider",
+          "name": "com.squaremed.diabetesconnect.android.provider.DataProvider"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void showActivity(android.content.Context)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "u8u32er3fp5dm0hhflrcqingvr"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void showActivity(android.content.Context)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cv5nf1vnfjjccpa49h1jaedjse"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1ds3qv6vojdc0ggqaoc6tpvhle"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gkddbpgb17te0vug3mhjg4tjcl"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.services.SyncService: void startExplicit(android.content.Context,com.squaremed.diabetesconnect.android.services.SyncService$SyncType)",
+          "sender": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "component": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "4p5gej1p7fgk0u70dv3483hsi4"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.WizardActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jbbf6flhjrdm8v61rmv4j30nt2"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void onBackPressed()",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "action": "\"android.intent.action.MAIN\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "categories": "\"android.intent.category.HOME\"",
+          "consumerMethod": "startActivity",
+          "id": "150uglt6951buo4l66p3fg8gkk"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.WizardActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5q9a1m0p2puaobqq3btd7gbiqg"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void onBackPressed()",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "action": "\"android.intent.action.MAIN\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "categories": "\"android.intent.category.HOME\"",
+          "consumerMethod": "startActivity",
+          "id": "a2g0pt7d42c0ec1g6mv0qdt037"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.WizardActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6kl7k5c1r7bptpjpsdv6hfuua0"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pn343ool9j63rc5dkagibuc170"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jk4u8le4kacp8qrn3l5vtrmann"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.services.SyncService: void startExplicit(android.content.Context,com.squaremed.diabetesconnect.android.services.SyncService$SyncType)",
+          "sender": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "component": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "trb5hg463tt17966puci0psl4b"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void showActivity(android.content.Context)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "avo18gkb9jicf92upe6fu69noj"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.services.SyncService: void startExplicit(android.content.Context,com.squaremed.diabetesconnect.android.services.SyncService$SyncType)",
+          "sender": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "component": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "mj7srpp8a0ss62vmi8lelabdno"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.services.SyncService: void startExplicit(android.content.Context,com.squaremed.diabetesconnect.android.services.SyncService$SyncType)",
+          "sender": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "component": "com.squaremed.diabetesconnect.android.services.SyncService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "il2eomf93dvb23ojf15v0sd1pd"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void onBackPressed()",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "action": "\"android.intent.action.MAIN\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "categories": "\"android.intent.category.HOME\"",
+          "consumerMethod": "startActivity",
+          "id": "dvq4uv084kns1o024aa1oivkdq"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void showActivity(android.content.Context)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6q7vhr69q9qckcstv6hdemild6"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity: void onBackPressed()",
+          "sender": "com.squaremed.diabetesconnect.android.activities.NeueingabeZugangsdatenActivity",
+          "action": "\"android.intent.action.MAIN\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "categories": "\"android.intent.category.HOME\"",
+          "consumerMethod": "startActivity",
+          "id": "3rk4lah5gimpfprpt3e7k62o0i"
+        },
+        {
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.IntroActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.squaremed.diabetesconnect.android.activities.IntroActivity",
+          "component": "com.squaremed.diabetesconnect.android.activities.WizardActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "r77r56c8mtmnuvocu3lgkjefhi"
+        }
+      ]
+    },
+    "ContentProviders": {
+      "ContentProvider": [
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "delete",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.MedikamentEinnahme: void deleteByEintrag(android.content.ContentResolver,long)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.Util: android.database.Cursor getSelectedKorrekturInsulin(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.eintrag.SporteinheitMesswert: void initSportarten(java.lang.Long)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "dbMethod": "update",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.DataProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])",
+          "exitOrEntry": "entry"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.fragments.TagebuchFragment: void loadDiaryOrder()",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.services.NotificationService: void enableAllNotifications(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.DataProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)",
+          "exitOrEntry": "entry"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.services.NotificationService: void disableAllNotifications(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.AbstractSyncableEntity: android.database.Cursor findByIdServer(android.content.ContentResolver,android.net.Uri,java.lang.Long)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.EintragActivity: void onCreate(android.os.Bundle)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.fragments.TagebuchFragment: android.database.Cursor loadMore()",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.EintragActivity: void setupMesswerte(android.database.Cursor)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.Util: android.database.Cursor getSelectedBasalInsulin(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "dbMethod": "insert",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.DataProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)",
+          "exitOrEntry": "entry"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.Util: android.database.Cursor getSelectedBolusOrPumpenInsulin(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.Kennzeichnung: java.util.HashMap getMapKennzeichnungIdToKennzeichnungTyp(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.Kennzeichnung: java.util.List asList(android.content.Context,java.util.Set)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "delete",
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.EintragActivity: void delete()",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.Util: android.database.Cursor getSelectedKorrekturInsulin(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.services.NotificationService: boolean checkActiveNotifications(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.Insulin: android.database.Cursor getSelectedInsulin(android.content.ContentResolver,java.lang.String)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.Util: android.database.Cursor getSelectedBolusOrPumpenInsulin(android.content.Context)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "update",
+          "calledAt": "com.squaremed.diabetesconnect.android.activities.EintragActivity: void delete()",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.services.NotificationAlarmSetter: void onReceive(android.content.Context,android.content.Intent)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.AbstractSyncableEntity: int getCountDirtyOrDirtyAndSyncInProgress(android.content.Context,android.net.Uri)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "dbMethod": "delete",
+          "calledAt": "com.squaremed.diabetesconnect.android.provider.DataProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])",
+          "exitOrEntry": "entry"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "BILLING",
+        "GET_TASKS",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "actuallyUsesPermissions": { "permission": "GET_TASKS" },
+    "apkFile": "../../../app_repo/appbundle/Diabetes Connect.apk",
+    "name": "Diabetes Connect"
+  }
+}

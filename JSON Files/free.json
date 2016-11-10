@@ -1,0 +1,1379 @@
+{
+  "application": {
+    "packageName": "com.finchvpn.android",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.MainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": [
+                "android.intent.category.BROWSABLE",
+                "android.intent.category.LAUNCHER",
+                "android.intent.category.LEANBACK_LAUNCHER"
+              ]
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.IntroActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.LoginActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.DisconnectVPN"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.BrowserActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.DiagnosticsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.AccountActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.PlansActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.GooglePurchaseActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.TunErrorActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.AppsFilterActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.finchvpn.android.views.CreateShortcuts",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.CREATE_SHORTCUT",
+              "categories": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "type": "service",
+          "name": "com.finchvpn.android.core.OpenVpnService",
+          "RequiredPermissions": { "PRM": "BIND_VPN_SERVICE" },
+          "IntentFilter": {
+            "filter": { "actions": "android.net.VpnService" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.finchvpn.android.helper.OnBootReceiver",
+          "IntentFilter": {
+            "filter": {
+              "actions": [
+                "android.intent.action.BOOT_COMPLETED",
+                "android.intent.action.MY_PACKAGE_REPLACED"
+              ]
+            }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.finchvpn.android.widget.WidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "IntentFilter": {
+            "filter": {
+              "actions": [
+                "android.net.conn.CONNECTIVITY_CHANGE",
+                "com.finchvpn.android.UPDATE_WIDGET",
+                "com.finchvpn.android.VPN_STATUS"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void buttonUpgrade(android.view.View)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.PlansActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cecqu6ermhgjo534mcihscm1a7"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onResume()",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.START_SERVICE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "himnqg5pt87o6srvrvgu3h9plb"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "g94qlsh3v7eh6890412pr7o0hg"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5rikotg62ceg42grnuun0a43k1"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.IntroActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "62t1e16v4j9vcv557mbndeii8d"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void a()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "8glht1atq8n6adjbtredg02227"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "natuk4or7c79jvvorkehbnken"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.ParcelFileDescriptor a()",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ofe4fc3taon3v5v08jdvrmd5dq"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "u3gikhtvhbbjth73osqsara4ef"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "n3rqlipd0ij6uuo34mkm0b2h2g"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "uum0085faitrd1cjt78j35b4im"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "i9jhb339jmpn48qah86moftep0"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "j3dg2k5bvhh59edoq1kpvu4uug"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lm91muh3hnm6d0irtfeejdieek"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "agkb6vibnkfjfh82vr2gb332ac"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jukl32n37krlta4iqafsr7q0dk"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: java.lang.String a()",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "n72hvhdb2cvnqb54ao9qgr6nn6"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.CreateShortcuts: void a()",
+          "sender": "com.finchvpn.android.views.CreateShortcuts",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "7nf7kenploom39stf3fe137863"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void f()",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "edq3vta0ep3kkkoq43e5ii16ld"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tlrjhq749s841odg0988ips8l7"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void a(com.finchvpn.android.model.AccountInfo)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ogpnnqivt951bmb38v7v7f5rgg"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: void a(java.lang.String,alo)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.VPN_STATUS\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "8q585njnt1ou1ib51e3tanovel"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.AccountActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ob6kculpijv9dgtf50bcubfert"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void a()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "48i87hebos5gd1l95tq5f0vdrh"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: java.lang.String a()",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fba467sd7keavsp97rhifdtr0a"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8k1dg88g5okqrd6npdsc7k3vlf"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gnc57pfrkiv0bm8oq9f8aa8qop"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ug8gj7e9i7f3haslp50lie0r3j"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "u2ha8ja008t9bfuq90sq49q1k0"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.Intent: java.lang.String getAction()>",
+              "sinkCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "IPC"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "c0q211gggn3ouu50cllpke1vug"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "oehns4su743m09sqct7o3fp7o"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onResume()",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.START_SERVICE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "t563lcfr9mc3bp0kglfeh48u4v"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "736csq27pksvrtcrpj50d9404j"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3i1it9eitiiiqin196o996mccn"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pkm2aunj2r5vip22snjaufdo0d"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.Intent: java.lang.String getAction()>",
+              "sinkCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "IPC"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "o63snvlcp0n4ac355r4csupn5m"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "56kcclcgibneqvta46vfh1iko8"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.BrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.BrowserActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sjh398vclpsthgokuglfpv2nji"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.CreateShortcuts: void a()",
+          "sender": "com.finchvpn.android.views.CreateShortcuts",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "kvjq1o9m1usk0h7b3d30bfafkq"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4rmq55i220vnaielpqdpb010h6"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mvv93568skpfq9e9jti40igjbc"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "s7rlcuh6j177rp9c9cld7r7ts4"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void a(android.content.Context)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "dmn8odqi7gfjfrgfp718khqnm3"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cjab6gfhru6a29n85a693g4u0j"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: java.lang.String a()",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a83shpqr06rdmnq4g2uaa19bds"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.views.DisconnectVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p9a653ksamnnqmp8igf79j06qo"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1dth14bmj2rj44b8mfugoieova"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void a(android.content.Context)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "2j7ct2fs8nnhnf7r2nngn80p3n"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.AccountActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "untptq310j630f4qtpeo4ji5k5"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4gbbm9ts7he0l432umlvn4quso"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "knmt9vmmlk531vvcuajeqn868o"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void f()",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qtjomt6u2oq9j84fo054esbhs5"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5ae11r0qccp7pc491poboiaucm"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "r9isurg32gat0faq5g9bk6k61l"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: void a(java.lang.String,alo)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.VPN_STATUS\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "172iavmeauo4n0er5kdbgu8as2"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hrvto2hki599ntppjfjn85clkh"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "udrnvngc0fk3l0vpv8pd07qrmg"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void a(com.finchvpn.android.model.AccountInfo)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ot7tbkskm4iqskh31qigo1vfvp"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.CreateShortcuts: void a()",
+          "sender": "com.finchvpn.android.views.CreateShortcuts",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "7409slf0nrq57os6m9dueqh96k"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4p05130kjr6v80tld5sn9dogt8"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tdcebvs1o0s6ladvv1iqgo9ma6"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void a()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "a77q6o30sja4lko1qv3j9u2bvf"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7cmtq2mimiusj32l48spi0i44l"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "de63jren98ktp5umm9pnuoodb0"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.AccountActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pjonp068t9gjtroetg5cjbulqd"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dcmmhtamh0vltc07s8mj2np941"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4qto9b1vnspihgv1btjefc0cuf"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "h808mkgp89c70g9koj0g1ivf3c"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void buttonUpgrade(android.view.View)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.PlansActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7h0ho6mun7ljlso4c7974f6vsp"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ubrms9lfs8s63bmn5ffqt05qdk"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.CreateShortcuts: void a()",
+          "sender": "com.finchvpn.android.views.CreateShortcuts",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ab583t722dvcihbo4b0650r569"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void f()",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jvf56su28e0jrfuetjkqfm4a23"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onResume()",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.START_SERVICE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "sjpes98i7hn01tbqak1hc3fm1u"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "66jaeuntm6ioqoc49cdphiku88"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: void a(java.lang.String,alo)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.VPN_STATUS\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "pbo48o8v743kafdv33ctoonkfc"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.views.DisconnectVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "v8b8bhe7qmcl3jakv054uvn1j2"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void buttonUpgrade(android.view.View)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.PlansActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "641766ug5ck7nob1uvlc277t49"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onResume()",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.START_SERVICE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "fp0m4sh7bvq6n1j2b5s25ks2sm"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lsb55n3fa3uutcebirgr6punie"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "54pmiif2a79kibpmepvevpsv4p"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.IntroActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7g99cvm1ikekaf38locqgajeiv"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.ParcelFileDescriptor a()",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mddjqr4vgrt5kigbtb3bua2gt8"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nkdj9vkf0djqdi5grrog7n1mvl"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4bfmrn3rvuu342rs12ag34hl3e"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "m9d46i26hmfve01n709l2c6k4m"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lqjn488imjb3a47apifd4eoen0"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "uq2q0rt29s55euvq25htgojkii"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ai7nl0a7jjsp5dekvctp066594"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.AccountActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3voqmoasi6asl4fto2ncdnf39f"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.IntroActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qm2vvpgpb5c97cjuui8s8qa3ur"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "84a5fue4iakumv7ncgu1eb7mqv"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pg19pnl5anrjhoh1qfksgn7hj2"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "d9a3fm1gdio6vblh246u7lb7m"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void a(com.finchvpn.android.model.AccountInfo)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nd32atti2h37n3bk4s8r03tp8u"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.views.DisconnectVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o5bf2vo9jk7vercnp784r54ls4"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void a(com.finchvpn.android.model.AccountInfo)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6ts1rol22msg933ps0l4jjo2pv"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "m2h3imjv9q4419j3avr928i0gm"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9genv8vfr3oavktgffjlr73tcv"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.BrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.BrowserActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cfdd963eaovju9bamnkk0rsd5"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "173ju4pnlfo8sfksrg1bfk5c6c"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ikcomi4bs99efcgmvo70cbb6n8"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.Intent: java.lang.String getAction()>",
+              "sinkCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "IPC"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "atrjagkcjbu31mk19c04tdluhu"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bh4ab9ej2lbhhus2q3npjdpls9"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6o2upr5qija6vb2guv5k5mj9ce"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "lonevjfgb1u3i0t139mdil2i5b"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void buttonUpgrade(android.view.View)",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.PlansActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kbqvt5g47l59lkrj6516en3csg"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "component": "com.finchvpn.android.views.DisconnectVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.Intent: java.lang.String getAction()>",
+              "sinkCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.finchvpn.android.core.OpenVpnService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "IPC"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "9p1i6sp0299vlpeon5bqqiusi3"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.ParcelFileDescriptor a()",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5qqjf88en7a1kgtqemb7rtv902"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rspv8b7ohl886lbnnkdq2havd3"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void a(android.content.Context)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "li4bihmn1h50v214rk0j4ttpla"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rnj9icv3ng1hd3uo4sqcgpm9c4"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.LoginActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.LoginActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8830r847th7lmb3ko7l9pgjqku"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fln3mhum44n75kvbmh44iti7ok"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DisconnectVPN: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.finchvpn.android.views.DisconnectVPN",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "e2ncc85qfe3v54v65h4uhds7j0"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.BrowserActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7ger9v97ea8e7oltrkbh2urh12"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pdicae33hpb3ja0kfi1sae9dbn"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.TunErrorActivity: void buttonInstallTun(android.view.View)",
+          "sender": "com.finchvpn.android.views.TunErrorActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "j5mj3patltpfihkeqgofipmdj"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "r81m92v9oak9hjbekrnru1mj0j"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nsi6qa485jb33581vu7jsjh3gu"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.BrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.BrowserActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2n2fak15ss94lv1kpmakpvt62j"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void a(android.content.Context)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.widget.WidgetProvider",
+          "action": "\"android.appwidget.action.APPWIDGET_UPDATE\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "9oluauo8429kbj60hea40qkgbk"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.IntroActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "au6vhlfoubg1dorf172qcae84d"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.BrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.finchvpn.android.views.BrowserActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "moccvkvhnpifjvosblk9ifq62r"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.AccountActivity: void f()",
+          "sender": "com.finchvpn.android.views.AccountActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "b68481tpkji9m7tbr8ja2fe7oe"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.GooglePurchaseActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.finchvpn.android.views.GooglePurchaseActivity",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bs2nro9vq8ppf4fc03ppug6t9b"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: void a(java.lang.String,alo)",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "action": "\"com.finchvpn.android.VPN_STATUS\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "mpm08cit9nmu0eup8260kr425m"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.DiagnosticsActivity: java.lang.String a()",
+          "sender": "com.finchvpn.android.views.DiagnosticsActivity",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ln4gfo2h3iscbq46l8sh5lrka7"
+        },
+        {
+          "calledAt": "com.finchvpn.android.views.MainActivity: void b(int,boolean)",
+          "sender": "com.finchvpn.android.views.MainActivity",
+          "component": "com.finchvpn.android.views.DiagnosticsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dk3v1ncgol9pvsa6o2h78320su"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void onStart()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "component": "com.finchvpn.android.views.LoginActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "14up0tt2bge1v27q9p999e1jo8"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.openvpn.LaunchVPN: void a()",
+          "sender": "com.finchvpn.android.core.openvpn.LaunchVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "uvrhrmme8hpjo7l60j24gkgek5"
+        },
+        {
+          "calledAt": "com.finchvpn.android.core.OpenVpnService: android.os.ParcelFileDescriptor a()",
+          "sender": "com.finchvpn.android.core.OpenVpnService",
+          "component": "com.finchvpn.android.views.TunErrorActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ho7m67vhs66s86dkpvktlsf9fj"
+        },
+        {
+          "calledAt": "com.finchvpn.android.widget.WidgetIntentReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.finchvpn.android.widget.WidgetIntentReceiver",
+          "component": "com.finchvpn.android.views.DisconnectVPN",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "oshhan7jtk6nicn7vtsdni869m"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "BILLING",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "actuallyUsesPermissions": { "permission": "ACCESS_NETWORK_STATE" },
+    "apkFile": "../../../app_repo/bundle/Free  Premium VPN - FinchVPN_1.3.1_apk-dl.com.apk",
+    "name": "Free  Premium VPN - FinchVPN_1_3_1_apk-dl_com"
+  }
+}

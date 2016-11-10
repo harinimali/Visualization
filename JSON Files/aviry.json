@@ -1,0 +1,222 @@
+{
+  "application": {
+    "packageName": "com.aviary.android.feather",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "com.aviary.android.feather.MainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.aviary.android.feather.MainActivity2"
+        },
+        {
+          "type": "activity",
+          "name": "com.aviary.android.feather.MainActivity3"
+        },
+        {
+          "type": "activity",
+          "name": "com.aviary.android.feather.MainActivity4"
+        },
+        {
+          "type": "activity",
+          "name": "com.startapp.android.publish.list3d.List3DActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.startapp.android.publish.OverlayActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.startapp.android.publish.FullScreenActivity"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity4: void buttonOnClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity4",
+          "action": "\"android.intent.action.VIEW\"",
+          "dataType": "\"application/vnd.android.package-archive\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hjpigu18uns4t7q9hn93cc7um1"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity2: void onClick2(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity2",
+          "component": "com.aviary.android.feather.MainActivity3",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "219gpqu8kbm0g7mt1o4h8hkujd"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity3: void onClick3(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity3",
+          "component": "com.aviary.android.feather.MainActivity4",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7jrim05a13fa99386crnlsgaff"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity3: void onClick3(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity3",
+          "component": "com.aviary.android.feather.MainActivity4",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4j8m1l783lu7cannqnvf0bfc06"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity: void onClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity",
+          "component": "com.aviary.android.feather.MainActivity2",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "u3mlhkbvhfkvbnchkc4egh4t93"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity2: void onClick2(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity2",
+          "component": "com.aviary.android.feather.MainActivity3",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2lrvmarsqj3fpm0ubg5ue265r1"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity4: void buttonOnClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity4",
+          "action": "\"android.intent.action.VIEW\"",
+          "dataType": "\"application/vnd.android.package-archive\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lp38jfpa6np6hf1o7hg795kofl"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity3: void onClick3(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity3",
+          "component": "com.aviary.android.feather.MainActivity4",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hpcflvtbe63v6kgue9in7rp7ba"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity4: void buttonOnClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity4",
+          "action": "\"android.intent.action.VIEW\"",
+          "dataType": "\"application/vnd.android.package-archive\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3g9qads7a26v51ka0mq9q6fcrd"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity: void onClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity",
+          "component": "com.aviary.android.feather.MainActivity2",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mo8g9mab4j41f2pm4f74q2keak"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity3: void onClick3(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity3",
+          "component": "com.aviary.android.feather.MainActivity4",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e70qma4d3s5kaf9s31la4ojva6"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity: void onClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity",
+          "component": "com.aviary.android.feather.MainActivity2",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8l9dhkja4735pbpj4ouhb7ktbh"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity4: void buttonOnClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity4",
+          "action": "\"android.intent.action.VIEW\"",
+          "dataType": "\"application/vnd.android.package-archive\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kugihnghkve0naf6q31mp9l8dt"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity: void onClick(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity",
+          "component": "com.aviary.android.feather.MainActivity2",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4teuaqmn5rotgcb596j8i06ngj"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity2: void onClick2(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity2",
+          "component": "com.aviary.android.feather.MainActivity3",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "eapamj0mm7cn8ohhg1u4l5e12c"
+        },
+        {
+          "calledAt": "com.aviary.android.feather.MainActivity2: void onClick2(android.view.View)",
+          "sender": "com.aviary.android.feather.MainActivity2",
+          "component": "com.aviary.android.feather.MainActivity3",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tfcdu5qcadg5931lu06jptcr6f"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "ACCESS_COARSE_LOCATION",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "READ_PHONE_STATE",
+        "INTERNET",
+        "SYSTEM_ALERT_WINDOW",
+        "READ_EXTERNAL_STORAGE",
+        "WAKE_LOCK",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "ACCESS_NETWORK_STATE",
+        "READ_PHONE_STATE",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/bundle/Aviary V4 1 apkfiles.com.apk",
+    "name": "Aviary V4 1 apkfiles_com"
+  }
+}

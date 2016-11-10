@@ -1,0 +1,58 @@
+{
+  "application": {
+    "packageName": "music.bassbooster.equalizer",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "kx.com.app.equalizer.LauncherActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "kx.com.app.equalizer.EQActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "music.bassbooster.equalizer.EQActivity",
+              "categories": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "kx.com.app.equalizer.SettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "net.coocent.android.xmlparser.GiftActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        },
+        {
+          "type": "service",
+          "name": "kx.com.app.equalizer.EQService"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "MODIFY_AUDIO_SETTINGS",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "VIBRATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Equalizer & Bass Booster.apk",
+    "name": "Equalizer & Bass Booster"
+  }
+}

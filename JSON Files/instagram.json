@@ -1,0 +1,2104 @@
+{
+  "application": {
+    "packageName": "com.instagram.android",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "activity.MainTabActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.SEND"
+                ],
+                "data": [
+                  { "mimeType": "image/*" },
+                  { "mimeType": "video/*" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.SEND"
+                ],
+                "data": [
+                  { "mimeType": "image/*" },
+                  { "mimeType": "video/*" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "login.PasswordResetActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  { "scheme": "instagram" },
+                  {
+                    "scheme": "http",
+                    "host": "instagram.com"
+                  },
+                  {
+                    "scheme": "https",
+                    "host": "instagram.com"
+                  },
+                  {
+                    "scheme": "http",
+                    "host": "instagr.am"
+                  },
+                  {
+                    "scheme": "https",
+                    "host": "instagr.am"
+                  }
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  { "scheme": "instagram" },
+                  {
+                    "scheme": "http",
+                    "host": "instagram.com"
+                  },
+                  {
+                    "scheme": "https",
+                    "host": "instagram.com"
+                  },
+                  {
+                    "scheme": "http",
+                    "host": "instagr.am"
+                  },
+                  {
+                    "scheme": "https",
+                    "host": "instagr.am"
+                  }
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "nux.SignedOutFragmentActivity"
+        },
+        {
+          "type": "activity",
+          "name": "creation.activity.MediaCaptureActivity"
+        },
+        {
+          "type": "activity",
+          "name": "rageshake.RageShakeActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.TwitterAuthActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.FoursquareAuthActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.FlickrAuthActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.TumblrAuthActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.VkontakteAuthActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.ActivityInTab"
+        },
+        {
+          "type": "activity",
+          "name": "activity.UrlHandlerActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.VIEW",
+              "data": [
+                {
+                  "scheme": "http",
+                  "host": "instagr.am"
+                },
+                {
+                  "scheme": "https",
+                  "host": "instagr.am"
+                },
+                {
+                  "scheme": "http",
+                  "host": "instagram.com"
+                },
+                {
+                  "scheme": "https",
+                  "host": "instagram.com"
+                },
+                {
+                  "scheme": "http",
+                  "host": "instagram.com"
+                },
+                {
+                  "scheme": "https",
+                  "host": "instagram.com"
+                }
+              ],
+              "categories": [
+                "android.intent.category.DEFAULT",
+                "android.intent.category.BROWSABLE"
+              ]
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "activity.NewsActivityInTab"
+        },
+        {
+          "type": "activity",
+          "name": "maps.DedicatedMapActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.ArbitraryFragmentActivity"
+        },
+        {
+          "type": "activity",
+          "name": "support.camera.CropActivity"
+        },
+        {
+          "type": "activity",
+          "name": "maps.PhotoMapsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "people.activity.PeopleTagActivity"
+        },
+        {
+          "type": "activity",
+          "name": "activity.SimpleWebViewActivity"
+        },
+        {
+          "type": "service",
+          "name": "service.PendingMediaService"
+        },
+        {
+          "type": "service",
+          "name": "service.MediaService"
+        },
+        {
+          "type": "service",
+          "name": "service.TumblrService"
+        },
+        {
+          "type": "service",
+          "name": "service.UserService"
+        },
+        {
+          "type": "service",
+          "name": "service.AutoCompleteHashtagService"
+        },
+        {
+          "type": "service",
+          "name": "rageshake.RageShakeService"
+        },
+        {
+          "type": "service",
+          "name": "foursquare.NearbyVenuesService"
+        },
+        {
+          "type": "service",
+          "name": "receiver.C2DMReceiver"
+        },
+        {
+          "type": "service",
+          "name": "service.PushRegistrationService"
+        },
+        {
+          "type": "receiver",
+          "name": "c2dm.C2DMBroadcastReceiver",
+          "RequiredPermissions": { "PRM": "SEND" },
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "com.google.android.c2dm.intent.RECEIVE",
+                  "com.google.android.c2dm.intent.REGISTRATION"
+                ],
+                "categories": [
+                  "com.instagram.android",
+                  "com.instagram.android"
+                ]
+              },
+              {
+                "actions": [
+                  "com.google.android.c2dm.intent.RECEIVE",
+                  "com.google.android.c2dm.intent.REGISTRATION"
+                ],
+                "categories": [
+                  "com.instagram.android",
+                  "com.instagram.android"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.instagram.android.receiver.C2DMReceiver: void b(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.receiver.C2DMReceiver",
+          "component": "com.instagram.android.service.PushRegistrationService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "qkaglikb836m56s7nq8uotm5vs"
+        },
+        {
+          "calledAt": "com.instagram.android.service.TumblrService: void a(android.content.Context,int)",
+          "sender": "com.instagram.android.service.TumblrService",
+          "component": "com.instagram.android.service.TumblrService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "gplc64vtgr44bog34ov5a4848m"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.b: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.c2dm.b",
+          "action": "\"com.google.android.c2dm.intent.REGISTER\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "76e1qe0pf1voausbtvuh7310ll"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.ao: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.ao",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ofuof6ero51smqglg0aib7l3qk"
+        },
+        {
+          "calledAt": "com.instagram.android.support.camera.CropActivity: void a(java.lang.String,android.os.Bundle)",
+          "sender": "com.instagram.android.support.camera.CropActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "2gb5iudnsatlks92gmvim5j7vg"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.SimpleWebViewActivity: void a(android.content.Context,java.lang.String,boolean,java.lang.String)",
+          "sender": "com.instagram.android.activity.SimpleWebViewActivity",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a3ki48a46d86qls3vj7iprj46"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"autocomplete\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "tagas3fkmahai19u8keceke8jp"
+        },
+        {
+          "calledAt": "com.instagram.android.login.c.c: void onClick(android.view.View)",
+          "sender": "com.instagram.android.login.c.c",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "eu0n7vu1lkb56u30ic5vqn49qr"
+        },
+        {
+          "calledAt": "com.instagram.android.util.e: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.util.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "j0bo65rp8eog1qm37gf39tdbhk"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.SignedOutFragmentActivity: void a(android.app.Activity)",
+          "sender": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "em7kpkkf8uhlhkftodnrlkbeq8"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportMediaUtil: void a(android.content.Context,com.instagram.j.l)",
+          "sender": "com.instagram.android.util.ReportMediaUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ttpmnlqun2bobrvoqu8kd9cmt8"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.b: void a(java.lang.Void)",
+          "sender": "com.instagram.android.rageshake.b",
+          "component": "com.instagram.android.rageshake.RageShakeActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "58bkuptjjs0n60r1dgmq894f60"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hcdv5ki3kth2bf34fiu0l74f7d"
+        },
+        {
+          "calledAt": "com.instagram.android.receiver.C2DMReceiver: void b(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.receiver.C2DMReceiver",
+          "component": "com.instagram.android.service.PushRegistrationService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "8l8mk1hgufnu0ornv25rt26kad"
+        },
+        {
+          "calledAt": "com.instagram.android.people.c.l: void onClick(android.view.View)",
+          "sender": "com.instagram.android.people.c.l",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6hcm3n5jusq9vgdrgn14gc8tou"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(android.content.Context,com.instagram.pendingmedia.model.c,int)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "ta307anme0hvan0eq54su1t4tj"
+        },
+        {
+          "calledAt": "com.instagram.android.support.camera.CropActivity: void a(java.lang.String,android.os.Bundle)",
+          "sender": "com.instagram.android.support.camera.CropActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "7i9tbpuc6j1mm9jel82a6numtc"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "i5ke3lln9e1820fbakhgit751g"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.a: void a(android.net.Uri)",
+          "sender": "com.instagram.android.widget.a",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9pbcvgm7khmcd279g45bebmmbt"
+        },
+        {
+          "calledAt": "com.instagram.android.service.o: void a()",
+          "sender": "com.instagram.android.service.o",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "ukjf1gf4s8d5op08hn5qvrkk2t"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.ao: void a(android.app.Activity,com.instagram.android.model.b.e)",
+          "sender": "com.instagram.android.nux.ao",
+          "component": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lpum8vmhgn1hn88etrosvmf138"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.ao: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.ao",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "babfs6upj7oa326p4al6s95pal"
+        },
+        {
+          "calledAt": "com.instagram.android.service.o: void a()",
+          "sender": "com.instagram.android.service.o",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "q6bmqajh4h5fma9ovelqe0baj8"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "9hsenjvj1mlj95b1vfr0nr2h45"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.y: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.widget.y",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "te929o88sekp3jn6oiu83ppup8"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.c: void a(android.location.Location,java.lang.String)",
+          "sender": "com.instagram.android.creation.c",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "2c3m7r6aoork59n4kv80atgtcq"
+        },
+        {
+          "calledAt": "com.instagram.creation.video.f.a: void ax()",
+          "sender": "com.instagram.creation.video.f.a",
+          "action": "\"com.android.music.musicservicecommand\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "ep7mmm7tl7k5hao8pr795d5585"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.UrlHandlerActivity: void h()",
+          "sender": "com.instagram.android.activity.UrlHandlerActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "obl9los8j2r0r51it5ql1tekmm"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.w: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.activity.w",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dik8410v6if1kfmm99sg2omk1i"
+        },
+        {
+          "calledAt": "com.instagram.android.service.TumblrService: void a(android.content.Context,int)",
+          "sender": "com.instagram.android.service.TumblrService",
+          "component": "com.instagram.android.service.TumblrService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "deaq4jtf1290v0u7hgv7ap8fln"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.a: void a(android.app.Activity)",
+          "sender": "com.instagram.android.activity.a",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p0liat9ei519car0lofot0j17p"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.a: void c(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.c2dm.a",
+          "component": "com.instagram.android.c2dm.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "m7abg4nbmkmonakdnd1dmaen37"
+        },
+        {
+          "calledAt": "com.instagram.creation.video.f.a: void ax()",
+          "sender": "com.instagram.creation.video.f.a",
+          "action": "\"com.android.music.musicservicecommand\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "j2rsmdbrah9qiohovgqb9k640g"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportMediaUtil: void a(android.content.Context,com.instagram.j.l)",
+          "sender": "com.instagram.android.util.ReportMediaUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1udn7t2gsrm1q3133gknk7s7l5"
+        },
+        {
+          "calledAt": "com.instagram.android.service.o: void a()",
+          "sender": "com.instagram.android.service.o",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "t3a15jfj5g4kdfmpb86mei8qk0"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.activity.MediaCaptureActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.instagram.android.creation.activity.MediaCaptureActivity",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "tm5h3s3trfke0c21u424kec2p2"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.UrlHandlerActivity: void h()",
+          "sender": "com.instagram.android.activity.UrlHandlerActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rccbss1r8qjcdhhm17879n5h8t"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.SignedOutFragmentActivity: void a(android.app.Activity)",
+          "sender": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7hdi7a8468nf6s438b6923cdcb"
+        },
+        {
+          "calledAt": "com.instagram.creation.base.e: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.creation.base.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "lvt1mcbu3v0skhugvrcm9svvo5"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.SimpleWebViewActivity: void a(android.content.Context,java.lang.String,boolean,java.lang.String)",
+          "sender": "com.instagram.android.activity.SimpleWebViewActivity",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ptgobild58oucb20c5fkuojkhm"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.a: void c(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.c2dm.a",
+          "component": "com.instagram.android.c2dm.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "367qd9n588t73e5nslktepj2jf"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.activity.MediaCaptureActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.instagram.android.creation.activity.MediaCaptureActivity",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "vofsu2dgt9fr9ibde8rol22qgn"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.m: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.m",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "po6esqlh5oe5k2hpfkmk9op3o5"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.a: void a(android.app.Activity)",
+          "sender": "com.instagram.android.activity.a",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8a8vajln3bk21m6uc0brirseam"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportCommentUtil: void a(android.content.Context,com.instagram.j.b,boolean)",
+          "sender": "com.instagram.android.util.ReportCommentUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sv7an551f2qml10les7o6p7nu1"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.w: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.activity.w",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "it5hhe2ci1njoldo5h0d0cq3du"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(android.content.Context,com.instagram.pendingmedia.model.c,int)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "lmh4urojv1dcjdma9b1c5b42ng"
+        },
+        {
+          "calledAt": "com.instagram.android.people.activity.PeopleTagActivity: void onBackPressed()",
+          "sender": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "f4ltiipp6cp11ner3jbpl814k7"
+        },
+        {
+          "calledAt": "com.instagram.android.people.activity.PeopleTagActivity: void onBackPressed()",
+          "sender": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "uqg88bl8ktlmhohljrta9vge7j"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "g1qv3lbc129ht0ve639r8jqlep"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bsl9btrh0d87ovspeujn17lfl5"
+        },
+        {
+          "calledAt": "com.instagram.android.receiver.C2DMReceiver: void b(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.receiver.C2DMReceiver",
+          "component": "com.instagram.android.service.PushRegistrationService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "l7jobmi0f1i1dkh2ifqnrihtte"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.a: void a(android.app.Activity)",
+          "sender": "com.instagram.android.activity.a",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jo49u6eaqmpvih7iel11f8rf08"
+        },
+        {
+          "calledAt": "com.instagram.android.people.activity.PeopleTagActivity: void onBackPressed()",
+          "sender": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "rabt67u73907rbf5g61cmlvf41"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.c: void a(android.location.Location,java.lang.String)",
+          "sender": "com.instagram.android.creation.c",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "q6r8k4r7a97kpr7v6kihoe1asi"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bi785inobijr75v8c8d7o9rf0q"
+        },
+        {
+          "calledAt": "com.instagram.android.people.c.l: void onClick(android.view.View)",
+          "sender": "com.instagram.android.people.c.l",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4neeh2jaa67uqg14ppguend2u8"
+        },
+        {
+          "calledAt": "com.instagram.android.directshare.c.b: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.directshare.c.b",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "teenh5banr1grrrmkf5om355na"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.m: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.m",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fotdb1on4fnug0f4t38kdjf9ju"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ik6vmcpa7qibbjh1tiqoekhomb"
+        },
+        {
+          "calledAt": "com.instagram.android.service.TumblrService: void a(android.content.Context,int)",
+          "sender": "com.instagram.android.service.TumblrService",
+          "component": "com.instagram.android.service.TumblrService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "13j5k3sp58f23n3d1b7b7ec0k3"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"autocomplete\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "he9bmggcfnu6odvmeuejt3llun"
+        },
+        {
+          "calledAt": "com.instagram.android.maps.f.a: void a(android.app.Activity,java.lang.String)",
+          "sender": "com.instagram.android.maps.f.a",
+          "component": "com.instagram.android.maps.DedicatedMapActivity",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ktvkdgerc7l987724fnbice8lb"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nkl79claf1mjje6rq97s3vosrj"
+        },
+        {
+          "calledAt": "com.instagram.android.util.i: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.android.util.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "ap7g9mo7dd365ffb0jath372e4"
+        },
+        {
+          "calledAt": "com.instagram.android.service.o: void a()",
+          "sender": "com.instagram.android.service.o",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "ckevg0n6uif8ns3o89lonv0ida"
+        },
+        {
+          "calledAt": "com.instagram.c.b: void onClick(android.view.View)",
+          "sender": "com.instagram.c.b",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1johij8bnq2mpvhaalj9tvng8q"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.AutoCompleteHashtagService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "oh73cie9l12t46opdv4lotc7o"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vturolu6pdrqeuhr4hkhr03isk"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ti71go6s2l3qlro4on7fmns0jp"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(android.content.Context,com.instagram.pendingmedia.model.c,int)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "p9pm61ehvc6vgd6iug2pm771cj"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nric7i36mbgmu9cvdo56ae6lla"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.RageShakeService: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.instagram.android.rageshake.RageShakeService",
+          "component": "com.instagram.android.rageshake.RageShakeService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "1p6smn37gber1hkcqqouugsfp7"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.a.z: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.feed.a.a.z",
+          "component": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4jlbitmknm2bjqfq9mhbe5lblt"
+        },
+        {
+          "calledAt": "com.instagram.android.maps.f.a: void a(android.app.Activity,java.lang.String)",
+          "sender": "com.instagram.android.maps.f.a",
+          "component": "com.instagram.android.maps.DedicatedMapActivity",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bdc6181g0tdmljqo21ftgktml9"
+        },
+        {
+          "calledAt": "com.instagram.android.directshare.c.b: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.directshare.c.b",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rnqlbfa3thqb73oqjinnf6vpt"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.UrlHandlerActivity: void h()",
+          "sender": "com.instagram.android.activity.UrlHandlerActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "390rj8kpn67qsrfe3o48gj6soc"
+        },
+        {
+          "calledAt": "com.instagram.android.login.c.c: void onClick(android.view.View)",
+          "sender": "com.instagram.android.login.c.c",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "33nen9ivq88400m9frn4m4u1p7"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.bt: void update(java.util.Observable,java.lang.Object)",
+          "sender": "com.instagram.android.creation.b.bt",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "cgfktbjbjcaef66mrr3a3mfge5"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportMediaUtil: void a(android.content.Context,com.instagram.j.l)",
+          "sender": "com.instagram.android.util.ReportMediaUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ebmjj0ebr7k134qch9qpt8uh26"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.y: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.widget.y",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gjpernmfe70cv909u7p6hp7mh3"
+        },
+        {
+          "calledAt": "com.instagram.android.util.j: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.util.j",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t846o74d0qh1ofl1vu8f2tajvu"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "q21fkigp9kmnhqda4h605fg540"
+        },
+        {
+          "calledAt": "com.instagram.android.service.TumblrService: void a(android.content.Context,int)",
+          "sender": "com.instagram.android.service.TumblrService",
+          "component": "com.instagram.android.service.TumblrService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "sq0cdalk3h0oalbq7mhf2b1tho"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.b: void a(java.lang.Void)",
+          "sender": "com.instagram.android.rageshake.b",
+          "component": "com.instagram.android.rageshake.RageShakeActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7qbc19pgmc3b2i994kn3o3bq4d"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.c: void a(android.location.Location,java.lang.String)",
+          "sender": "com.instagram.android.creation.c",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "eancl2ai37bc9drb8ij9hq9oko"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.a: void a(android.net.Uri)",
+          "sender": "com.instagram.android.widget.a",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hdt5uveaoh5t46bo1a4o0kfrgc"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.RageShakeService: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.instagram.android.rageshake.RageShakeService",
+          "component": "com.instagram.android.rageshake.RageShakeService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "d5gknd89rgd36mabahq7unoqkl"
+        },
+        {
+          "calledAt": "com.instagram.android.maps.f.a: void a(android.app.Activity,java.lang.String)",
+          "sender": "com.instagram.android.maps.f.a",
+          "component": "com.instagram.android.maps.DedicatedMapActivity",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t3rih3g16edonkpcqsst0mi009"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.w: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.activity.w",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "s322t95lb6nkju69ndt03taaql"
+        },
+        {
+          "calledAt": "com.instagram.android.receiver.C2DMReceiver: void b(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.receiver.C2DMReceiver",
+          "component": "com.instagram.android.service.PushRegistrationService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "qqsq39in3i6i3qc6ae1lfbgnbu"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportCommentUtil: void a(android.content.Context,com.instagram.j.b,boolean)",
+          "sender": "com.instagram.android.util.ReportCommentUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mvavfikq4epladvo6s3hmtf9f4"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportCommentUtil: void a(android.content.Context,com.instagram.j.b,boolean)",
+          "sender": "com.instagram.android.util.ReportCommentUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hsg3lb6293620upj8d20vbc4fg"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(android.content.Context,com.instagram.pendingmedia.model.c,int)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.PendingMediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "i8u6cm0424ap633746bipvill2"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qpdo5vab2k3jsicmbvla314hci"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "89o17jbmoo7ipir62e0mrl8sp6"
+        },
+        {
+          "calledAt": "com.instagram.creation.base.e: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.creation.base.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "njog07pklmb67j7hjnce6taaq2"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "2s1l1lqba0uo3273hhiu38mrp3"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "12v4e6mul8t6pb9c5uj4sp4m2v"
+        },
+        {
+          "calledAt": "com.instagram.android.people.activity.PeopleTagActivity: void onBackPressed()",
+          "sender": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "5fv9u9sfi8airt9j1dfih51ect"
+        },
+        {
+          "calledAt": "com.instagram.android.service.MediaService: void a(android.content.Context,com.instagram.j.l,int)",
+          "sender": "com.instagram.android.service.MediaService",
+          "component": "com.instagram.android.service.MediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "hul9r06t84kd6qvqo8c0j4kj7n"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"autocomplete\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "4b3gk98ir8e3f6bikg4srmr0qc"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p7g2qoc04gaqljtuiifm7fckpk"
+        },
+        {
+          "calledAt": "com.instagram.c.b: void onClick(android.view.View)",
+          "sender": "com.instagram.c.b",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lefd2n7iv8kgbnatfef52g2788"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.b: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.c2dm.b",
+          "action": "\"com.google.android.c2dm.intent.REGISTER\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "tmhqb6hgt0u5e3906i6c9hrut7"
+        },
+        {
+          "calledAt": "com.instagram.android.login.c.c: void onClick(android.view.View)",
+          "sender": "com.instagram.android.login.c.c",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "coa48h4e4l165sfvs6ciubjqp8"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(com.instagram.j.l,com.instagram.pendingmedia.model.c)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "s90rolccghl2ss4ukin5bacjko"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.SignedOutFragmentActivity: void a(android.app.Activity)",
+          "sender": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5mds3auiokkqp4mq65cbkjcptf"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.a: void c(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.c2dm.a",
+          "component": "com.instagram.android.c2dm.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "m1c54n2su3is5elk5vuk8f9erm"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.a: void a(android.net.Uri)",
+          "sender": "com.instagram.android.widget.a",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4sldf0fo8qd2u9mp55raqgkn1m"
+        },
+        {
+          "calledAt": "com.instagram.android.directshare.c.b: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.directshare.c.b",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "imhhgcl636k4ir6eii7tqfa9et"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.SimpleWebViewActivity: void a(android.content.Context,java.lang.String,boolean,java.lang.String)",
+          "sender": "com.instagram.android.activity.SimpleWebViewActivity",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7r55ei8t4pfpmoqnt5boi1qptj"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.y: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.widget.y",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fev7951uuku0pik016m67sosg4"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "e8dss346cbak45ljgf8q61dne3"
+        },
+        {
+          "calledAt": "com.instagram.android.util.j: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.util.j",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "54dvccjfbvdoui40b0sfrbno2u"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(com.instagram.j.l,com.instagram.pendingmedia.model.c)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "ihs9c8ei27fo0t7789vdsvbm1j"
+        },
+        {
+          "calledAt": "com.instagram.android.directshare.c.b: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.directshare.c.b",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t3q1isf3iu78ndf13hogvt6i0b"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.ao: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.ao",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ot8no8mel3dijglphdri4eoj2o"
+        },
+        {
+          "calledAt": "com.instagram.android.util.i: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.android.util.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "500bforhhv80msnns0accsoohg"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.b: void a(java.lang.Void)",
+          "sender": "com.instagram.android.rageshake.b",
+          "component": "com.instagram.android.rageshake.RageShakeActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dqriopttptaj4r0h11usckt0aa"
+        },
+        {
+          "calledAt": "com.instagram.android.people.c.l: void onClick(android.view.View)",
+          "sender": "com.instagram.android.people.c.l",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vbimhu84985tlp4jovavdltjpf"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.bt: void update(java.util.Observable,java.lang.Object)",
+          "sender": "com.instagram.android.creation.b.bt",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "fvt9m85gni7rmnq93s2lqe44gt"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.c: void a(android.location.Location,java.lang.String)",
+          "sender": "com.instagram.android.creation.c",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "br2rkg5gka3i3s2k8rg8uk42ss"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "ti1fj9aed11hjk2f7v0s2ji38g"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "d7mllf4rmvqmq2vcrgj2246ri0"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.b: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.c2dm.b",
+          "action": "\"com.google.android.c2dm.intent.REGISTER\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "rugd41h3t0vc0603g2g40o794o"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.a: void c(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.c2dm.a",
+          "component": "com.instagram.android.c2dm.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "61apduqsuit3fk5pfk0q3584qa"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.SimpleWebViewActivity: void a(android.content.Context,java.lang.String,boolean,java.lang.String)",
+          "sender": "com.instagram.android.activity.SimpleWebViewActivity",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "v3eogjrf6ormeq5pmct40ug5s7"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.ao: void a(android.app.Activity,com.instagram.android.model.b.e)",
+          "sender": "com.instagram.android.nux.ao",
+          "component": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7prush59n4hio2emu3e544b5fa"
+        },
+        {
+          "calledAt": "com.instagram.android.people.c.l: void onClick(android.view.View)",
+          "sender": "com.instagram.android.people.c.l",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tvf2cd8i0aa4krovpktkosu2tt"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.a: void Z()",
+          "sender": "com.instagram.android.creation.b.a",
+          "component": "com.instagram.android.creation.b.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "llju3k3ne7h8njff6cvd0sskak"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.ao: void a(android.app.Activity,com.instagram.android.model.b.e)",
+          "sender": "com.instagram.android.nux.ao",
+          "component": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "596kne8bg2drlhiuuf0jvkh1h5"
+        },
+        {
+          "calledAt": "com.instagram.android.util.i: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.android.util.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "1qatc621btdf7krfsutk7q7rc4"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.a: void a(android.app.Activity)",
+          "sender": "com.instagram.android.activity.a",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p8otqtjic3gobols2vbk7b9m4m"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportCommentUtil: void a(android.content.Context,com.instagram.j.b,boolean)",
+          "sender": "com.instagram.android.util.ReportCommentUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8cusvotmjgkqevsdfp5o8gb1t6"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(com.instagram.j.l,com.instagram.pendingmedia.model.c)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "9km3qcn7gohmo3c2olpk9k0gvd"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.MainTabActivity: void a_(android.content.Intent,int)",
+          "sender": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "v8sbja900d071j3lg99f2cb404"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "29u2trsq91lk2vfpbstc35f0l2"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "o9srvcfd8lq7prb0c6rqdtiu04"
+        },
+        {
+          "calledAt": "com.instagram.android.service.MediaService: void a(android.content.Context,com.instagram.j.l,int)",
+          "sender": "com.instagram.android.service.MediaService",
+          "component": "com.instagram.android.service.MediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "8nir7mifaf2i4uum33tjptu2j2"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"autocomplete\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "23mvs1i8ntg2bjap09k5017clu"
+        },
+        {
+          "calledAt": "com.instagram.android.support.camera.CropActivity: void a(java.lang.String,android.os.Bundle)",
+          "sender": "com.instagram.android.support.camera.CropActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "2k02tqdqats8lgm5fe96dhjehe"
+        },
+        {
+          "calledAt": "com.instagram.android.util.j: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.util.j",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "afuh7oqs0soee0rcs982lgod8h"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.w: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.activity.w",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mh7lod1jnm0a5cda6jfjp6npm1"
+        },
+        {
+          "calledAt": "com.instagram.android.login.c.c: void onClick(android.view.View)",
+          "sender": "com.instagram.android.login.c.c",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gih1nafdklj13fc3k5vuhob1vs"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.a: void a(android.net.Uri)",
+          "sender": "com.instagram.android.widget.a",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "b4igt1smps3ddm43hc1s4raakn"
+        },
+        {
+          "calledAt": "com.instagram.android.util.i: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.android.util.i",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "qped4p8ti9cjr5aisl77tadevj"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.AutoCompleteHashtagService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "2clp29t5t1ulkjvmre6c8rtpef"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.SignedOutFragmentActivity: void a(android.app.Activity)",
+          "sender": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pr6733ni5tbaa11pf0a5cndh0p"
+        },
+        {
+          "calledAt": "com.instagram.android.util.j: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.util.j",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1pmo6t6qduhadn4rol1qqkjum1"
+        },
+        {
+          "calledAt": "com.instagram.android.support.camera.CropActivity: void a(java.lang.String,android.os.Bundle)",
+          "sender": "com.instagram.android.support.camera.CropActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nl40f2d2qsta5lgp7qoh0pi3c5"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.m: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.m",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "b50q08emedeeip1qfp8u9bci5n"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.bt: void update(java.util.Observable,java.lang.Object)",
+          "sender": "com.instagram.android.creation.b.bt",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "onmo8452riht1163r71omfer0v"
+        },
+        {
+          "calledAt": "com.instagram.android.c2dm.b: void a(android.content.Context,java.lang.String)",
+          "sender": "com.instagram.android.c2dm.b",
+          "action": "\"com.google.android.c2dm.intent.REGISTER\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "2cmu8n2m394c2feeol617pi043"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "bhgd66u4m4uk090t5es0m25en3"
+        },
+        {
+          "calledAt": "com.instagram.android.maps.f.a: void a(android.app.Activity,java.lang.String)",
+          "sender": "com.instagram.android.maps.f.a",
+          "component": "com.instagram.android.maps.DedicatedMapActivity",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hec57bbbm8l98skrr3qj733et2"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.m: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.m",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "uiurvoi7il6mvphua6grsnnqj9"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.b: void a(java.lang.Void)",
+          "sender": "com.instagram.android.rageshake.b",
+          "component": "com.instagram.android.rageshake.RageShakeActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5bi7uvjmi98kqpijaqk6qv76fc"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.MainTabActivity: void a_(android.content.Intent,int)",
+          "sender": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "d1gu097qgrj5tk2k47qomae42t"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.a.z: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.feed.a.a.z",
+          "component": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "74tgt6tn219jqs80bfb7llq31s"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.a.z: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.feed.a.a.z",
+          "component": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "16rnis762qmau8q8c1eminrsem"
+        },
+        {
+          "calledAt": "com.instagram.android.util.e: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.util.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dnnmu3k9nd5thaocht5e4oc0rd"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.FoursquareAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.FoursquareAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "o35fqbda6iov3oipun366trqem"
+        },
+        {
+          "calledAt": "com.instagram.android.service.PendingMediaService: void a(com.instagram.j.l,com.instagram.pendingmedia.model.c)",
+          "sender": "com.instagram.android.service.PendingMediaService",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "5t8i9d1rroi3feqkp6oout28c2"
+        },
+        {
+          "calledAt": "com.instagram.c.b: void onClick(android.view.View)",
+          "sender": "com.instagram.c.b",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "k38t10a6bv14b4erm70s43k9ei"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "qvofheoe282v197ka483dod9g3"
+        },
+        {
+          "calledAt": "com.instagram.creation.video.f.a: void ax()",
+          "sender": "com.instagram.creation.video.f.a",
+          "action": "\"com.android.music.musicservicecommand\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "vgubus3pu7p4q7754llohgihos"
+        },
+        {
+          "calledAt": "com.instagram.android.service.MediaService: void a(android.content.Context,com.instagram.j.l,int)",
+          "sender": "com.instagram.android.service.MediaService",
+          "component": "com.instagram.android.service.MediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "c3m7fd1bi8k9nv7ihe7trhhfo7"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.activity.MediaCaptureActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.instagram.android.creation.activity.MediaCaptureActivity",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "3dju18ml357p6825gmqos4fcg3"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.RageShakeService: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.instagram.android.rageshake.RageShakeService",
+          "component": "com.instagram.android.rageshake.RageShakeService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "7cu53245fvmp8hqh9r03jq5ahu"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.MainTabActivity: void a_(android.content.Intent,int)",
+          "sender": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "m73hl71d217ke019gmrp2pepp7"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.MainTabActivity: void a_(android.content.Intent,int)",
+          "sender": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "ah3r8r457b1r6spfijs5247d2v"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.b.ao: void onClick(android.view.View)",
+          "sender": "com.instagram.android.feed.a.b.ao",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4bhnrfc4crpnhs15mloi5qjgsv"
+        },
+        {
+          "calledAt": "com.instagram.android.util.e: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.util.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ruk6j752iut40e9jb940fo3nmk"
+        },
+        {
+          "calledAt": "com.instagram.c.b: void onClick(android.view.View)",
+          "sender": "com.instagram.c.b",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5ndulj31h05s9u94ljikg650dv"
+        },
+        {
+          "calledAt": "com.instagram.creation.base.e: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.creation.base.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "8hhbl50tvarqbaj1utv6go8a0k"
+        },
+        {
+          "calledAt": "com.instagram.android.service.MediaService: void a(android.content.Context,com.instagram.j.l,int)",
+          "sender": "com.instagram.android.service.MediaService",
+          "component": "com.instagram.android.service.MediaService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "fifjll6n441aspafccjsmrm6dc"
+        },
+        {
+          "calledAt": "com.instagram.android.nux.ao: void a(android.app.Activity,com.instagram.android.model.b.e)",
+          "sender": "com.instagram.android.nux.ao",
+          "component": "com.instagram.android.activity.MainTabActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mffi0hkjvialn1ol0g2h2to9n2"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "81cvtsaekgur36pa2v8agjj9ri"
+        },
+        {
+          "calledAt": "com.instagram.android.util.e: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.util.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "htemth1b9ogam0lugebks89dn4"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.VkontakteAuthActivity: void b(java.lang.String)",
+          "sender": "com.instagram.android.activity.VkontakteAuthActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "f282mdhjvt3ls1q20nuavjs118"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.AutoCompleteHashtagService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "n9reba63opods12kr5drbl0uqo"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.b.bt: void update(java.util.Observable,java.lang.Object)",
+          "sender": "com.instagram.android.creation.b.bt",
+          "component": "com.instagram.android.foursquare.NearbyVenuesService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "qlek48f1j53vua7rlea6476l3v"
+        },
+        {
+          "calledAt": "com.instagram.android.activity.UrlHandlerActivity: void h()",
+          "sender": "com.instagram.android.activity.UrlHandlerActivity",
+          "component": "com.instagram.android.nux.SignedOutFragmentActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1pmplk2ob5trhgj4rturvqk6jf"
+        },
+        {
+          "calledAt": "com.instagram.android.creation.activity.MediaCaptureActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.instagram.android.creation.activity.MediaCaptureActivity",
+          "component": "com.instagram.android.service.UserService",
+          "action": "\"suggestions\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "njhogmgpm3flg7kn863pn49nlc"
+        },
+        {
+          "calledAt": "com.instagram.android.rageshake.RageShakeService: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.instagram.android.rageshake.RageShakeService",
+          "component": "com.instagram.android.rageshake.RageShakeService",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "eb8967fln8g7gt1d7a3brlaa60"
+        },
+        {
+          "calledAt": "com.instagram.android.feed.a.a.z: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.feed.a.a.z",
+          "component": "com.instagram.android.people.activity.PeopleTagActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tra37epem7abe7le8hh2efmr2m"
+        },
+        {
+          "calledAt": "com.instagram.android.b: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.instagram.android.b",
+          "component": "com.instagram.android.service.AutoCompleteHashtagService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "8nkgq8l41phkootf35hf5jkuhc"
+        },
+        {
+          "calledAt": "com.instagram.creation.video.f.a: void ax()",
+          "sender": "com.instagram.creation.video.f.a",
+          "action": "\"com.android.music.musicservicecommand\"",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "k268mt57f7i6iohuudrrbc35to"
+        },
+        {
+          "calledAt": "com.instagram.android.widget.y: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.instagram.android.widget.y",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pkk3b3gfeklp8crta948o7u7ve"
+        },
+        {
+          "calledAt": "com.instagram.creation.base.e: void a(android.app.Activity,int,java.io.File)",
+          "sender": "com.instagram.creation.base.e",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "6f2mfpavea14r0a02egihiddgb"
+        },
+        {
+          "calledAt": "com.instagram.android.util.ReportMediaUtil: void a(android.content.Context,com.instagram.j.l)",
+          "sender": "com.instagram.android.util.ReportMediaUtil",
+          "component": "com.instagram.android.activity.SimpleWebViewActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lnpns2m453lknnjgq3d20am8cd"
+        }
+      ]
+    },
+    "ContentProviders": {
+      "ContentProvider": [
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.instagram.android.util.k: void b(android.content.Context,java.util.HashMap)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "insert",
+          "calledAt": "com.instagram.android.r.a: android.net.Uri a(java.lang.Integer[])",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.instagram.creation.video.j.j: java.lang.String a(android.content.Context,android.net.Uri)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "insert",
+          "calledAt": "com.instagram.android.util.i: void a(android.content.ContentResolver,java.io.File)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "$r11",
+          "dbMethod": "update",
+          "calledAt": "com.instagram.android.r.a: android.net.Uri a(java.lang.Integer[])",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "insert",
+          "calledAt": "com.instagram.creation.photo.gallery.ImageManager: android.net.Uri a(android.content.ContentResolver,java.lang.String,long,android.location.Location,java.lang.String,java.lang.String,int[])",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.instagram.android.util.k: void c(android.content.Context,java.util.HashMap)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.instagram.android.util.k: void a(android.content.Context,java.util.HashMap)",
+          "exitOrEntry": "exit"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_FRAME_BUFFER",
+        "INTERNET",
+        "GET_ACCOUNTS",
+        "READ_PROFILE",
+        "SET_ORIENTATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE",
+        "ACCESS_NETWORK_STATE",
+        "BATTERY_STATS",
+        "GET_TASKS",
+        "WAKE_LOCK",
+        "READ_CONTACTS",
+        "C2D_MESSAGE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "WAKE_LOCK",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "RECORD_AUDIO",
+        "CAMERA",
+        "GET_ACCOUNTS",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Instagram.apk",
+    "name": "Instagram"
+  }
+}

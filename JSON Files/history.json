@@ -1,0 +1,1522 @@
+{
+  "application": {
+    "packageName": "com.aetn.history.watch",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.SplashActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  { "scheme": "historyplus" },
+                  { "scheme": "historyconfigoptions" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  { "scheme": "historyplus" },
+                  { "scheme": "historyconfigoptions" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.tablet.TabletHomeActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.SearchActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.phone.PhoneHomeActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.EpisodeDetailActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.SeriesDetailActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.video.AEAKPlayerVideoActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.video.DaiVideoActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.SettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.auth.LoginActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.auth.MvpdPickerActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.AboutActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.ContactUsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.SignInActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.GenericWebviewActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.NielsenOptOutActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.ClosedCaptionSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.WatchListActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.activities.phone.PhoneTopicsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.tremorvideo.sdk.android.videoad.Playvideo",
+          "IntentFilter": {
+            "filter": {
+              "actions": "com.tremorvideo.sdk.android.videoad.Playvideo",
+              "categories": "android.intent.category.EMBED"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.jirbo.adcolony.AdColonyOverlay"
+        },
+        {
+          "type": "activity",
+          "name": "com.jirbo.adcolony.AdColonyFullscreen"
+        },
+        {
+          "type": "activity",
+          "name": "com.jirbo.adcolony.AdColonyBrowser"
+        },
+        {
+          "type": "activity",
+          "name": "com.mdialog.android.stream.ClickThroughActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.crittercism.NotificationActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.aetn.watch.auth.LoginSuccessActivity"
+        },
+        {
+          "type": "service",
+          "name": "com.adobe.adobepass.accessenabler.api.AccessEnablerService"
+        },
+        {
+          "type": "service",
+          "name": "com.akamai.media.hls.AkamaiHLSService"
+        },
+        {
+          "type": "service",
+          "name": "com.google.android.gms.measurement.AppMeasurementService"
+        },
+        {
+          "type": "receiver",
+          "name": "com.aetn.watch.receiver.WatchListReceiver"
+        },
+        {
+          "type": "receiver",
+          "name": "com.localytics.android.PushReceiver",
+          "RequiredPermissions": { "PRM": "SEND" },
+          "IntentFilter": {
+            "filter": {
+              "actions": [
+                "com.google.android.c2dm.intent.REGISTRATION",
+                "com.google.android.c2dm.intent.RECEIVE"
+              ],
+              "categories": "com.aetn.aetv.watch"
+            }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.mobileapptracker.Tracker",
+          "IntentFilter": {
+            "filter": { "actions": "com.android.vending.INSTALL_REFERRER" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "IntentFilter": {
+            "filter": { "actions": "com.google.android.gms.measurement.UPLOAD" }
+          }
+        },
+        {
+          "type": "provider",
+          "name": "com.google.android.gms.measurement.AppMeasurementContentProvider"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeActivity(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "f8k061q4upg8jmadjn689m75c0"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.AEAKPlayerVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.AEAKPlayerVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ea21rs4vk9q4ts5u4fpkjrdbhi"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaFacebook(android.content.Context,com.aetn.libs.core.ShareItem,java.lang.String)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a8u1lugd923k444a36oliqdphb"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "op9soe3mkpgoha61p3dsqrji11"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeActivity(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "98a4b8br0b5hhstav7ravmfapt"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sshutlefhegso121cs8ruu14vq"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: void handleNavigateToUrl(android.os.Bundle)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "component": "com.aetn.watch.auth.LoginActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "norsv9a0diqqnub2r6sh5njnov"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaTwitter(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3llrsbb21q3a0nuuvamumb3prs"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$8: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.settings.DATE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rqbfii9q26178guaqa3iljhveb"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void onNewIntent(android.content.Intent)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "2vpmpok6s4egds59pdfi56k9db"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: void handleNavigateToUrl(android.os.Bundle)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "component": "com.aetn.watch.auth.LoginActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "v0qc1qhg04bkvfbik4vb44qvjs"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.EpisodeDetailActivity: void loadSeriesDetail(com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.activities.EpisodeDetailActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "q1ue3r4us15lngb7lea153ff53"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeFragment(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gh0vvefsr8pu2ueb6qd3e29dhj"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.ShowAsset$2: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.ShowAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tli67k8o6b8i6s5f33q7ptbp43"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bs3jrj9qnm2k8bpc0kud10381u"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2cri7vqm22le1n7612b4v1ld4b"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void onNewIntent(android.content.Intent)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "3ma8jua6jmnpj40o5rmqotorhh"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.SplashActivity$3: void onFinish()",
+          "sender": "com.aetn.watch.activities.SplashActivity",
+          "component": "com.aetn.watch.activities.SplashActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7ii2tgch3hl8v2m1o6726u0mef"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jilv1hm1m2u4brqj97pua2su2l"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.ShowsGridFragment: void launchShowActivity(android.content.Context,com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.ui.ShowsGridFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gfes7ivhd8vhb4rdif8jkpjgar"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaFacebook(android.content.Context,com.aetn.libs.core.ShareItem,java.lang.String)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1npkrba25qhndasdpusermdehn"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ftob3r00j30jnssn6srhnmts7n"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.phone.PhoneTopicsActivity$TopicsAdapter: void playCurrentAsset(int)",
+          "sender": "com.aetn.watch.activities.phone.PhoneTopicsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1m9ja9p0fjs3ofj3u1tk410l9i"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void displayShow()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2q5j3dkeiobjgll4uhdnccjg0o"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.SettingsFragment$15: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.SettingsFragment",
+          "component": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1vtqfftbh3719dmsk6l2vsjmqh"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchVideoPlayer(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "59quj58acql5rhnf0pu062m3a2"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showWatchList()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pr0jbv9sqg8sb309tb90n4cfl7"
+        },
+        {
+          "calledAt": "com.aetn.watch.utils.ShareUtils: void shareContent(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.aetn.watch.utils.ShareUtils",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t9mjk2a101nsnmggrk2hsk74f0"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2gojhm9qpiq8qdi3g9gl37st1o"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: boolean onQueryTextSubmit(java.lang.String)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.SearchActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "q7dc086k5mc7adcddmj40v6q7h"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseContentFragment: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.ui.BaseContentFragment",
+          "component": "com.aetn.watch.ui.BaseContentFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mvvaka2ikhs494slbg4upm44km"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaGooglePlus(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rd0uchmbncit0kkkd3jql57eqt"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "j7b0hpr62992vifaqdg0b8hpfb"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginActivity$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "com.aetn.watch.auth.LoginActivity",
+          "component": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6s3laflluno4pha20pl76ucaoi"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ef5siprbeh24ff4smqo6ajig3s"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "75co68cia99hnjfl6qoqr648n8"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "g2ba04rlpmoumglq3f5m70ucfd"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: boolean onQueryTextSubmit(java.lang.String)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.SearchActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ec42otjkoho8c52sdgb2805lrd"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.phone.PhoneTopicsActivity$TopicsAdapter: void playCurrentAsset(int)",
+          "sender": "com.aetn.watch.activities.phone.PhoneTopicsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cg6f3oak0nc2enlustfnn5hj9c"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.AEAKPlayerVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.AEAKPlayerVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pfjekc0gkc09hvqpsd6mk49kod"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lgog059tij0n5hp9oqpd5bihri"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rda5n18c5ee9102ci09j67sreq"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.SplashActivity$3: void onFinish()",
+          "sender": "com.aetn.watch.activities.SplashActivity",
+          "component": "com.aetn.watch.activities.SplashActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lf4ftevoa5ja7pg4u21bc4ld7f"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeActivity(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "98rr0p2rantrrvo81rvfsm453g"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: boolean launchedProviderWebsiteIfSet(android.app.Activity)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "s2ekdkanbnj60oi32vifdbr35j"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void onNewIntent(android.content.Intent)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "o5sl52rasrhb56brhah31ufe98"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hdc3mqgektrto64afau67oo8ge"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaGooglePlus(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ds9pa8lg6v03523ef7vj9mr3fa"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$2$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "krftp4647b8qftkmeid6ra2232"
+        },
+        {
+          "calledAt": "com.aetn.watch.utils.ShareUtils: void shareContent(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.aetn.watch.utils.ShareUtils",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hmlekfs8sf6ujr0tpe9dok3cq5"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$2$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rqj4kn5jjl4u4cghq1op5132ju"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.DaiVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.DaiVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fhteviebcf33c2mdff6huoqra2"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaGooglePlus(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7tq9m4adl4moelq82e4a21noho"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.AEAKPlayerVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.AEAKPlayerVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hm9mofgs82ef30enf79n60j4u"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kgldu08utq35ea6gfdsvjcrdod"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: boolean onQueryTextSubmit(java.lang.String)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.SearchActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6nn9c5qiic8v5nek4k5l5o3m1b"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.SplashActivity$3: void onFinish()",
+          "sender": "com.aetn.watch.activities.SplashActivity",
+          "component": "com.aetn.watch.activities.SplashActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nc33u3oothuum4mv48vl811hf9"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$8: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.settings.DATE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o2bmfu897259tcqlfaj5o98hqe"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "natvgoliq2vi8dff2r0vspd6g1"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaTwitter(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qougpbiuiergboo7ho1364d9nr"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$9: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jmk14ui8dpqhab20pgc89en16s"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginSuccessActivity: void startVideoIfSet()",
+          "sender": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nsocqrfequom8dt8vj1qo3rc8d"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseContentFragment: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.ui.BaseContentFragment",
+          "component": "com.aetn.watch.ui.BaseContentFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "djibroj1nfp0u7p9kjqmfekk5t"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.ShowsGridFragment: void launchShowActivity(android.content.Context,com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.ui.ShowsGridFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bkifka40mbr9f3aor83tlafc39"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginActivity$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "com.aetn.watch.auth.LoginActivity",
+          "component": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "i9gpdtkdftgr3eod7eh7npmig4"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$8: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.settings.DATE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fr2215cnlranrr7pug1cquj98e"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.AEAKPlayerVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.AEAKPlayerVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9gkbu65dns28fa7fgm1apdkt8a"
+        },
+        {
+          "calledAt": "com.aetn.watch.utils.ShareUtils: void shareContent(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.aetn.watch.utils.ShareUtils",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cte1glskmlomeqkh3b4q4qdrkf"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchVideoPlayer(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gkgod8eqm5upkeicr931g1u3vr"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.ShowsGridFragment: void launchShowActivity(android.content.Context,com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.ui.ShowsGridFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a7egnffnq4c7km4emb35j7scre"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: boolean launchedProviderWebsiteIfSet(android.app.Activity)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "paekbn6067766dpm5qrufbmo54"
+        },
+        {
+          "calledAt": "com.aetn.watch.views.MenuBuilder: int addIntentOptions(int,int,int,android.content.ComponentName,android.content.Intent[],android.content.Intent,int,android.view.MenuItem[])",
+          "sender": "com.aetn.watch.views.MenuBuilder",
+          "component": "com.aetn.watch.views.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "768a8jobv6foegjrgbs4tc8ooc"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaFacebook(android.content.Context,com.aetn.libs.core.ShareItem,java.lang.String)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6m4a699bjfr2tn8f8j0mu34of0"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ockmbmarbnrsspbhkkjniukmmu"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void displayShow()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "spe8ssto3levo6ntt889b2je5l"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchVideoPlayer(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "75eu3jhb45er1hk3kj7b6gt1kg"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.ShowsGridFragment: void launchShowActivity(android.content.Context,com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.ui.ShowsGridFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7d5t2fko4q64pvr1l1h24rkh3t"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeFragment(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7rieq7ai8eo9ermaq0n5cmh7nd"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.EpisodeDetailActivity: void loadSeriesDetail(com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.activities.EpisodeDetailActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hsrdjh09125ercc8pofdmdsiur"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mtc2tcfq7i5tdjiled81rg9a1r"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaFacebook(android.content.Context,com.aetn.libs.core.ShareItem,java.lang.String)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "n0u0ovsbv7d4js6c9se5h99nt3"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaTwitter(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1li6rnldsjung4n4niigob66e4"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginActivity$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "com.aetn.watch.auth.LoginActivity",
+          "component": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t4a4cl699c1kf12ufi3pf15lup"
+        },
+        {
+          "calledAt": "com.aetn.watch.views.MenuBuilder: int addIntentOptions(int,int,int,android.content.ComponentName,android.content.Intent[],android.content.Intent,int,android.view.MenuItem[])",
+          "sender": "com.aetn.watch.views.MenuBuilder",
+          "component": "com.aetn.watch.views.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "jpedlu9b4p733lvm04ai1a66h3"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.DaiVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.DaiVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e8a5pduj7i89g1gg06ikca5qdr"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaGooglePlus(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "aoa738k8bgtgt8mdg9nt5golfr"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginSuccessActivity: void startVideoIfSet()",
+          "sender": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jgkt0dvk1knpj6d0kdhvsro755"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fq5n7g6fc3qk5malbp2hg6p81s"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "djvvmig6flqbbatlsk7ocs714r"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showWatchList()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "i3naq308kv6mnupv7e2337q9q2"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fmhmftvn3ggljs1lubggo20bdk"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchVideoPlayer(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pp1f2rmr5luplf4t290ja6albq"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.DaiVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.DaiVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "q5mcvuiofmm62t5fojp7bv0gb4"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void onNewIntent(android.content.Intent)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "m6ns0km8m820mj82fhrpq6uv2h"
+        },
+        {
+          "calledAt": "com.aetn.watch.utils.ShareUtils: void shareContent(android.content.Context,java.lang.String,java.lang.String,java.lang.String)",
+          "sender": "com.aetn.watch.utils.ShareUtils",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "88163hgkn9eokorfhmqhpaqppf"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showWatchList()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8j2en17a4ii2bsv594jh306opi"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "uljm1nkkd3qj1nt2635rdtukg0"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$8: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.settings.DATE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cc6nkuepbj6s1f7mu52cqafnqq"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8qtldpfe1s81u9cg1ese9sp3bm"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: boolean launchedProviderWebsiteIfSet(android.app.Activity)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2jjala2itm6o8tiiduhitt8o9k"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: boolean launchedProviderWebsiteIfSet(android.app.Activity)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gmsm319ujf06jhbiohtv17hspc"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseContentFragment: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.ui.BaseContentFragment",
+          "component": "com.aetn.watch.ui.BaseContentFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5lt8vkroeojk80eo7uqmdeutac"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeFragment(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bm7tn25rbfga2lor57l0vko43"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.SettingsFragment$15: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.SettingsFragment",
+          "component": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5rc724g8as0d7mpl9rspc6e197"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nh27v80soqgau05e7n9gp2iv6c"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.ClosedCaptionSettingsActivity: void updateUI()",
+          "sender": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "eru07e492do0e08ouer3as0ggd"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qva243gbscue14u4khog934ntb"
+        },
+        {
+          "calledAt": "com.aetn.watch.video.DaiVideoActivity: void playNextVideo(com.aetn.watch.model.Episodes$Episode)",
+          "sender": "com.aetn.watch.video.DaiVideoActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "370hhm638l9c0356001f0p655i"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: boolean onQueryTextSubmit(java.lang.String)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "component": "com.aetn.watch.activities.SearchActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "k7em1k27iud3c267ngoo32bldg"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showWatchList()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "irlpjio93v6iq46i3ottbuapbd"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7kbkc0meon7e68ojj5b7smahr4"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lkm64b86ddbs91jom0gr9r8jii"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: void handleNavigateToUrl(android.os.Bundle)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "component": "com.aetn.watch.auth.LoginActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "go4hnakedp04blm42qqh1elgo0"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void displayShow()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dqn990nsofqlp0o1oo7uhdkglc"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeFragment(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "phs6tdteuv71oaio0nfus7d0t5"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qc262uptep3320sjqoebe0gct4"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.SettingsFragment$15: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.SettingsFragment",
+          "component": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kqn2cl65acm04hol71p6blumtf"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "d3jfsmtif2d36itfto0so17ep2"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.ClosedCaptionSettingsActivity: void updateUI()",
+          "sender": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "3k59b1ou6u0fll3epac9eabs1e"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.SplashActivity$3: void onFinish()",
+          "sender": "com.aetn.watch.activities.SplashActivity",
+          "component": "com.aetn.watch.activities.SplashActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "677hq46jclh4ol8ajt0f6h5eog"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginActivity$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "com.aetn.watch.auth.LoginActivity",
+          "component": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ktjrcqnmjruhivu6p14ndno4p8"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.GridAsset$3: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.GridAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "imehk6le3elua90hbv8hr22ar9"
+        },
+        {
+          "calledAt": "com.aetn.watch.views.MenuBuilder: int addIntentOptions(int,int,int,android.content.ComponentName,android.content.Intent[],android.content.Intent,int,android.view.MenuItem[])",
+          "sender": "com.aetn.watch.views.MenuBuilder",
+          "component": "com.aetn.watch.views.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "k9okvvjilvrnle38absii2eo3n"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "s9t362kjgscbnjc02e27dcoo4t"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseContentFragment: void launchNewActivity(java.lang.Class,android.os.Bundle)",
+          "sender": "com.aetn.watch.ui.BaseContentFragment",
+          "component": "com.aetn.watch.ui.BaseContentFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e72jc4gjp9jnnd265kabdhp02j"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.ShowAsset$2: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.ShowAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3q3e91rfemgdhj5d548kb4v1vl"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.phone.PhoneTopicsActivity$TopicsAdapter: void playCurrentAsset(int)",
+          "sender": "com.aetn.watch.activities.phone.PhoneTopicsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bd0r5scnj9tujps293rr67paab"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.ShowAsset$2: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.ShowAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "h2qaa99r2mcmkdok66at4id4u3"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.SettingsFragment$15: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.SettingsFragment",
+          "component": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2hpj19e83o0ms1pl83b1d817iv"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$1$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ddshbm270clm30tqqkcdb57jh0"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AEShareManager: void shareViaTwitter(android.content.Context,com.aetn.libs.core.ShareItem)",
+          "sender": "com.aetn.libs.core.AEShareManager",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "h9tr79cmhks5niisrut97n2q3"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$2$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fucikg8vheqc6n23di949pkvlq"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.phone.PhoneTopicsActivity$TopicsAdapter: void playCurrentAsset(int)",
+          "sender": "com.aetn.watch.activities.phone.PhoneTopicsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ck2gvef26t3njtehrcps9r5k03"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rrna3bcs82fqv887ic7bfbu0rs"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$9: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tk5e9krv0iu7d48f7rv6evslbk"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.ClosedCaptionSettingsActivity: void updateUI()",
+          "sender": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "rbdmigklavco0uik9vqfaptpka"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.EpisodeDetailActivity: void loadSeriesDetail(com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.activities.EpisodeDetailActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o11qls3p5s88p243krsmvqd1i7"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginSuccessActivity: void startVideoIfSet()",
+          "sender": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "n10ebpk6ujpp87ceqa5sbkjhlp"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$9: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ducipc2jiptvlddkqgsd858kej"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity$9: void onPositiveClick(int,android.view.View)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e6d82hslv2as9el5tnurp6q81n"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mnn7oj7v5jua0s8a3pfkp1885n"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.EpisodeDetailActivity: void loadSeriesDetail(com.aetn.watch.model.Show)",
+          "sender": "com.aetn.watch.activities.EpisodeDetailActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qkar93osu94sdqftq4907lh65"
+        },
+        {
+          "calledAt": "com.aetn.watch.views.MenuBuilder: int addIntentOptions(int,int,int,android.content.ComponentName,android.content.Intent[],android.content.Intent,int,android.view.MenuItem[])",
+          "sender": "com.aetn.watch.views.MenuBuilder",
+          "component": "com.aetn.watch.views.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "4uoi5fsdpbn6itstrh34bj70ve"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void displayShow()",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kupo48ra4lssogo9831okc16lb"
+        },
+        {
+          "calledAt": "com.aetn.watch.ui.BaseFeaturesFragment$1: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.ui.BaseFeaturesFragment",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "964bkr1mk5n4cv796o0vucn7kf"
+        },
+        {
+          "calledAt": "com.aetn.libs.core.AENotificationManager$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.aetn.libs.core.AENotificationManager",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kcqgl9qplhhq62vt62stauhrdr"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.ClosedCaptionSettingsActivity: void updateUI()",
+          "sender": "com.aetn.watch.activities.ClosedCaptionSettingsActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "8hd0u00r56f9djkfj6pkqccd3l"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.ShowAsset$2: void onClick(android.view.View)",
+          "sender": "com.aetn.watch.widget.ShowAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "oh1l7dn6ucdvvil4nt7iut67qo"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.AuthManager: void handleNavigateToUrl(android.os.Bundle)",
+          "sender": "com.aetn.watch.auth.AuthManager",
+          "component": "com.aetn.watch.auth.LoginActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "r2a77gc78u7outm8cm3l7kikah"
+        },
+        {
+          "calledAt": "com.aetn.watch.activities.BaseActivity: void showEpisodeActivity(java.lang.String,java.lang.String,com.aetn.watch.model.Episodes$Episode,boolean,float,float)",
+          "sender": "com.aetn.watch.activities.BaseActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "e56749s86i5qcdjnbi10j6647c"
+        },
+        {
+          "calledAt": "com.aetn.watch.auth.LoginSuccessActivity: void startVideoIfSet()",
+          "sender": "com.aetn.watch.auth.LoginSuccessActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tcns75aaehn4t1qu23e4fru149"
+        },
+        {
+          "calledAt": "com.aetn.watch.widget.SearchResultsAsset$2$1: void onResponse(java.lang.String)",
+          "sender": "com.aetn.watch.widget.SearchResultsAsset",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3gg364aotmp0mplr7hj8nqt2cg"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "GET_ACCOUNTS",
+        "READ_EXTERNAL_STORAGE",
+        "CHANGE_WIFI_STATE",
+        "WAKE_LOCK",
+        "C2D_MESSAGE",
+        "VIBRATE",
+        "RECEIVE",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "VIBRATE",
+        "WAKE_LOCK"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/HISTORY_2.0.5_apk-dl.com (1).apk",
+    "name": "HISTORY_2_0_5_apk-dl_com (1)"
+  }
+}

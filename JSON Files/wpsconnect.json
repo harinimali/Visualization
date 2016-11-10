@@ -1,0 +1,90 @@
+{
+  "application": {
+    "packageName": "com.ngb.wpsconnect",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "com.ngb.wpsconnect.MainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.ngb.wpsconnect.PasswordActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.ads.AdActivity"
+        },
+        {
+          "type": "service",
+          "name": "com.ngb.wpsconnect.MainActivity"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.ngb.wpsconnect.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.ngb.wpsconnect.MainActivity",
+          "component": "com.ngb.wpsconnect.PasswordActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "f737tamptaelfoovd42p68k9u5"
+        },
+        {
+          "calledAt": "com.ngb.wpsconnect.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.ngb.wpsconnect.MainActivity",
+          "component": "com.ngb.wpsconnect.PasswordActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ag97r05urpb2knqbih4dqgtfhl"
+        },
+        {
+          "calledAt": "com.ngb.wpsconnect.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.ngb.wpsconnect.MainActivity",
+          "component": "com.ngb.wpsconnect.PasswordActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "smk6chlmv20tfel0dnh10ig1ln"
+        },
+        {
+          "calledAt": "com.ngb.wpsconnect.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "com.ngb.wpsconnect.MainActivity",
+          "component": "com.ngb.wpsconnect.PasswordActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p0okefuvvkve1ufrc08d20dvc0"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "CHANGE_WIFI_STATE",
+        "ACCESS_SUPERUSER",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/WPS Connect_1.2.2_apk-dl.com (1).apk",
+    "name": "WPS Connect_1_2_2_apk-dl_com (1)"
+  }
+}

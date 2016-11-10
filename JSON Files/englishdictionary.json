@@ -1,0 +1,435 @@
+{
+  "application": {
+    "packageName": "livio.pack.lang.en_US",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.DictionaryView",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.DictionarySearch",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "colordict.intent.action.SEARCH",
+                  "android.intent.action.SEARCH"
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.DEFAULT"
+                ]
+              },
+              {
+                "actions": [
+                  "colordict.intent.action.SEARCH",
+                  "android.intent.action.SEARCH"
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.DEFAULT"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.DictionaryWidget"
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.PreferencesFromXML"
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.PreferencesFragXML"
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.SelectHistory"
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.SelectBookmarks"
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.CustomizeView"
+        },
+        {
+          "type": "activity",
+          "name": "livio.pack.lang.en_US.Redirect"
+        },
+        {
+          "type": "receiver",
+          "name": "livio.pack.lang.en_US.BasicWidget",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "livio.pack.lang.en_US.BasicWidgetXL",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "provider",
+          "name": "livio.pack.lang.en_US.DictionaryProvider"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "7f4gnfmk0pgb4j5r6geg8i3jo7"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4q2pr4jfuetiio3epbhl2mvm7u"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "2ojo3de9me020u9dktn1fk1tfq"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pe8ope8ctdl9st263bif0jn08l"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.e: void onClick(android.view.View)",
+          "sender": "livio.pack.lang.en_US.e",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "l0k4p03i0j2aldk05hghttshef"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.k: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.k",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "72daifiqu0g59fvre9jet8kh4n"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "dbndk8akho91lb9tgh5m7geh1s"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.k: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.k",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "qhov5mfoatiift7fte2h3p2vjb"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.h: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.h",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "onl8np1kis894hddtm5u9es9au"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionarySearch: void onNewIntent(android.content.Intent)",
+          "sender": "livio.pack.lang.en_US.DictionarySearch",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "jfef64a9qnkfpv70t2gdrain56"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionaryView: void g()",
+          "sender": "livio.pack.lang.en_US.DictionaryView",
+          "component": "livio.pack.lang.en_US.Redirect",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6i5ha72mftrgep9eb7339g3qb0"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionaryView: void g()",
+          "sender": "livio.pack.lang.en_US.DictionaryView",
+          "component": "livio.pack.lang.en_US.Redirect",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4pj8uuasabcmnouq69d0f7cjia"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionaryView: void g()",
+          "sender": "livio.pack.lang.en_US.DictionaryView",
+          "component": "livio.pack.lang.en_US.Redirect",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1vshi02kma2he2su2ipihsmqel"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "civ4mua4sognfpshco89o0bq1c"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.k: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.k",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "im1skf7ikd0q2k38u9fc04vjeq"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionarySearch: void onNewIntent(android.content.Intent)",
+          "sender": "livio.pack.lang.en_US.DictionarySearch",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "hif0pkrr7q7rn959oapoj1cl5k"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "rtn5r8o6105m0t76fgbfrsec16"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.e: void onClick(android.view.View)",
+          "sender": "livio.pack.lang.en_US.e",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "au0qbfq2a7gp8ne26t18l9ivqr"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "jq3kppgnrfh17vf0t0ubokl7qe"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "48d168mk7mr8n9cf5af5fnb1io"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "49tipjmrm6imj5o1srscp5lqc"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1k5p7h8cl2dm7d511ervo56ppq"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.e: void onClick(android.view.View)",
+          "sender": "livio.pack.lang.en_US.e",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ltamm6t3mr3opmh95mg8plgid"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.h: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.h",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "keeeees3sgli0vp0a8ghihn0cb"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionaryView: void g()",
+          "sender": "livio.pack.lang.en_US.DictionaryView",
+          "component": "livio.pack.lang.en_US.Redirect",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qeeb15do3j9ieh736o79olll6v"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6ngnsd82sill3jbdvkp55esp4k"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.e: void onClick(android.view.View)",
+          "sender": "livio.pack.lang.en_US.e",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6nemdv0jhvrngi362j2nc63qij"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "a672ing4ig0g6tcqdet511fe6m"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionarySearch: void onNewIntent(android.content.Intent)",
+          "sender": "livio.pack.lang.en_US.DictionarySearch",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "s0rhq7kcjl387f383f68mb2edu"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.DictionarySearch: void onNewIntent(android.content.Intent)",
+          "sender": "livio.pack.lang.en_US.DictionarySearch",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "nesuvd6b76jc2m6dtd0uoeunlt"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory$TitlesFragment: void a(java.lang.String)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "n9nlrk14odts17ekuf34ik0gea"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.h: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.h",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "77qe92hj5d3egamotd0jb4q9a2"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.k: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.k",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nfncskuj1idua73fou9r84rulj"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.h: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "livio.pack.lang.en_US.h",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ovjri8n75i2lb9c7vir53so0q0"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectBookmarks: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectBookmarks",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "htmlp19k634na3131qj58l6db5"
+        },
+        {
+          "calledAt": "livio.pack.lang.en_US.SelectHistory: boolean onOptionsItemSelected(android.view.MenuItem)",
+          "sender": "livio.pack.lang.en_US.SelectHistory",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "difjtvbrdcnbq8ln5ur0qsbhtt"
+        }
+      ]
+    },
+    "ContentProviders": {
+      "ContentProvider": [
+        {
+          "dbMethod": "update",
+          "calledAt": "livio.pack.lang.en_US.DictionaryProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])",
+          "exitOrEntry": "entry"
+        },
+        {
+          "dbMethod": "delete",
+          "calledAt": "livio.pack.lang.en_US.DictionaryProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])",
+          "exitOrEntry": "entry"
+        },
+        {
+          "dbMethod": "insert",
+          "calledAt": "livio.pack.lang.en_US.DictionaryProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)",
+          "exitOrEntry": "entry"
+        },
+        {
+          "uris": "$r5",
+          "dbMethod": "query",
+          "calledAt": "livio.pack.lang.en_US.BasicWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])",
+          "exitOrEntry": "exit"
+        },
+        {
+          "dbMethod": "query",
+          "calledAt": "livio.pack.lang.en_US.DictionaryProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)",
+          "exitOrEntry": "entry"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "ACCESS_NETWORK_STATE",
+        "INTERNET"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/English Offline Dictionary.apk",
+    "name": "English Offline Dictionary"
+  }
+}

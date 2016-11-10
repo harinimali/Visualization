@@ -1,0 +1,254 @@
+{
+  "application": {
+    "packageName": "com.clawdyvan.agendadigitalaluno",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "com.clawdyvan.agendaestudantepro.Activities.MainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.clawdyvan.agendaestudantepro.Activities.CameraActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        },
+        {
+          "type": "receiver",
+          "name": "com.clawdyvan.agendaestudantepro.Util.AlarmReceiver",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "com.clawdyvan.agendadigitalaluno",
+                  "AlarmReceiver"
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.DEFAULT"
+                ]
+              },
+              {
+                "actions": [
+                  "com.clawdyvan.agendadigitalaluno",
+                  "AlarmReceiver"
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.DEFAULT"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.clawdyvan.agendaestudantepro.Util.ReceiverReativaAlarmReboot",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.BOOT_COMPLETED" }
+          }
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.l: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.l",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "k17nugngcd2iq6ojolbh4nbsno"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity: void a()",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.CameraActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "psas7t896urllm884u254v7jui"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.m: void onClick(android.view.View)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.m",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "66dr0e3ejb74l4p0tffv2m8nie"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity: void a(android.app.Activity,java.lang.Class,android.os.Bundle,boolean)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ro0s78r1kpb14imdms7fjj65lf"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.l: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.l",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "ehuupjfcjupu41b4oi7heh9gcg"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.c: void onPictureTaken(byte[],android.hardware.Camera)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.c",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "pg77c06f0i5eonnjleb0q81nis"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.c: void onPictureTaken(byte[],android.hardware.Camera)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.c",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "7hd0aqm0b83oue5ndolh6jbuia"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.c: void onPictureTaken(byte[],android.hardware.Camera)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.c",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "458faj5qi91q278v2pbdrumbnq"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.c: void onPictureTaken(byte[],android.hardware.Camera)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.c",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "lq3l6gmqdmlsfvsvbak058pspv"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity: void a()",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.CameraActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "mda0tjlbo1qlsee57nv2ghdbs7"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity: void a(android.app.Activity,java.lang.Class,android.os.Bundle,boolean)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mujthjmos608gq2goodur6lo7r"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.l: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.l",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "nuingslek8hcvj6p2eqham9dii"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity: void a()",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.CameraActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "v3seuhf8gu3nr00e7jgbg5o1f8"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity: void a(android.app.Activity,java.lang.Class,android.os.Bundle,boolean)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6crfb03jjve5ea0aa7cps7lam3"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.m: void onClick(android.view.View)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.m",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "gp7lhbdut6qo0oua2fokvmsv6c"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity: void a(android.app.Activity,java.lang.Class,android.os.Bundle,boolean)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.ContainerFragmentsActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ohs9e677cl3afkvas1lbusk4q4"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.m: void onClick(android.view.View)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.m",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "t5m2kutpacfag4nfae17sisiec"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.m: void onClick(android.view.View)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.m",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "9l041cr99ve2n9hh61gtonir40"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity: void a()",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.VisualizacaoFotoActivity",
+          "component": "com.clawdyvan.agendaestudantepro.Activities.CameraActivity",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "n8gbrjpqq687b47jolir624nue"
+        },
+        {
+          "calledAt": "com.clawdyvan.agendaestudantepro.Activities.l: void onClick(android.content.DialogInterface,int)",
+          "sender": "com.clawdyvan.agendaestudantepro.Activities.l",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "setResult",
+          "id": "e3m1gp9qq614854c0nebkipekb"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "RECEIVE_BOOT_COMPLETED",
+        "CAMERA"
+      ]
+    },
+    "actuallyUsesPermissions": { "permission": "CAMERA" },
+    "apkFile": "../../../app_repo/appbundle/Student Agenda.apk",
+    "name": "Student Agenda"
+  }
+}

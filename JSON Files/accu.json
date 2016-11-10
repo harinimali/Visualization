@@ -1,0 +1,1106 @@
+{
+  "application": {
+    "packageName": "yo.app",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "yo.app.activity.AppActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  {
+                    "scheme": "http",
+                    "host": "yowindow.com"
+                  },
+                  { "scheme": "batch1724821682" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  {
+                    "scheme": "http",
+                    "host": "yowindow.com"
+                  },
+                  { "scheme": "batch1724821682" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  {
+                    "scheme": "http",
+                    "host": "yowindow.com"
+                  },
+                  { "scheme": "batch1724821682" }
+                ],
+                "categories": [
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE",
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.BROWSABLE"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.tv.TvActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LEANBACK_LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.daydream.DreamTestActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.MAIN" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.view.LandscapeOrganizerActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.SettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.AboutActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.DebugSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.UnitsSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.NotificationSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.wallpaper.WallpaperSettingsActivityForApp"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.AdvancedActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.options.WeatherSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.lib.ui.location.organizer.LocationOrganizerActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.SEARCH" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.lib.ui.location.properties.LocationPropertiesActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.lib.ui.location.properties.StationListActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.lib.ui.location.organizer.LocationSearchActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.SEARCH" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.alarm.AlarmListActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.deskclock.SetAlarm"
+        },
+        {
+          "type": "activity",
+          "name": "yo.host.ui.alarm.RingtonePickerActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "my.alarm.yowindow.PICK_RINGTONE",
+              "categories": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.wallpaper.view.WidgetsOfferActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.widget.small.NanoWidgetConfigurationActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.appwidget.action.APPWIDGET_CONFIGURE",
+                  "android.intent.action.SEARCH"
+                ]
+              },
+              {
+                "actions": [
+                  "android.appwidget.action.APPWIDGET_CONFIGURE",
+                  "android.intent.action.SEARCH"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.widget.small.MiniWidgetConfigurationActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.appwidget.action.APPWIDGET_CONFIGURE",
+                  "android.intent.action.SEARCH"
+                ]
+              },
+              {
+                "actions": [
+                  "android.appwidget.action.APPWIDGET_CONFIGURE",
+                  "android.intent.action.SEARCH"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.widget.forecast.ForecastWidgetConfigurationActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.appwidget.action.APPWIDGET_CONFIGURE",
+                  "android.intent.action.SEARCH"
+                ]
+              },
+              {
+                "actions": [
+                  "android.appwidget.action.APPWIDGET_CONFIGURE",
+                  "android.intent.action.SEARCH"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.widget.inspector.InspectorWidgetConfigurationActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_CONFIGURE" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.widget.clock.ClockWidgetConfigurationActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_CONFIGURE" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.widget.clock.ClockSmallWidgetConfigurationActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_CONFIGURE" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "yo.wallpaper.WallpaperSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.daydream.DreamSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.daydream.DreamSettingsActivityForApp"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        },
+        {
+          "type": "activity",
+          "name": "net.hockeyapp.android.UpdateActivity"
+        },
+        {
+          "type": "activity",
+          "name": "yo.lib.system.gallery.LandscapeGallery"
+        },
+        {
+          "type": "activity",
+          "name": "yo.tv.settings.TvSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.yandex.mobile.ads.AdActivity"
+        },
+        {
+          "type": "service",
+          "name": "yo.daydream.YoDreamService",
+          "RequiredPermissions": { "PRM": "BIND_DREAM_SERVICE" },
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.service.dreams.DreamService",
+              "categories": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "type": "service",
+          "name": "com.android.deskclock.alarms.AlarmService"
+        },
+        {
+          "type": "service",
+          "name": "yo.wallpaper.Wallpaper",
+          "RequiredPermissions": { "PRM": "BIND_WALLPAPER" },
+          "IntentFilter": {
+            "filter": { "actions": "android.service.wallpaper.WallpaperService" }
+          }
+        },
+        {
+          "type": "service",
+          "name": "yo.widget.WidgetProvider$UpdateService"
+        },
+        {
+          "type": "service",
+          "name": "yo.app.service.YoWindowBackgroundService"
+        },
+        {
+          "type": "service",
+          "name": "com.google.android.gms.analytics.CampaignTrackingService"
+        },
+        {
+          "type": "service",
+          "name": "com.google.android.gms.analytics.AnalyticsService"
+        },
+        {
+          "type": "receiver",
+          "name": "com.android.deskclock.alarms.AlarmStateManager"
+        },
+        {
+          "type": "receiver",
+          "name": "com.android.deskclock.AlarmInitReceiver",
+          "IntentFilter": {
+            "filter": {
+              "actions": [
+                "android.intent.action.BOOT_COMPLETED",
+                "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE",
+                "android.intent.action.TIME_SET",
+                "android.intent.action.TIMEZONE_CHANGED",
+                "android.intent.action.LOCALE_CHANGED"
+              ]
+            }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.small.NanoWidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.small.MiniWidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.forecast.ForecastWidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.inspector.InspectorWidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.clock.ClockWidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.clock.ClockSmallWidgetProvider",
+          "IntentFilter": {
+            "filter": { "actions": "android.appwidget.action.APPWIDGET_UPDATE" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "yo.widget.BootReceiver",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.BOOT_COMPLETED",
+                  "android.intent.action.MEDIA_SCANNER_FINISHED"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.BOOT_COMPLETED",
+                  "android.intent.action.MEDIA_SCANNER_FINISHED"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.google.android.gms.analytics.CampaignTrackingReceiver",
+          "RequiredPermissions": { "PRM": "INSTALL_PACKAGES" },
+          "IntentFilter": {
+            "filter": { "actions": "com.android.vending.INSTALL_REFERRER" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.google.android.gms.analytics.AnalyticsReceiver",
+          "IntentFilter": {
+            "filter": { "actions": "com.google.android.gms.analytics.ANALYTICS_DISPATCH" }
+          }
+        },
+        {
+          "type": "provider",
+          "name": "yo.lib.ui.location.organizer.LocationSuggestionProvider"
+        },
+        {
+          "type": "provider",
+          "name": "yo.app.provider.YoAppContentProvider"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cfkc076hufuaheimaj807a2vir"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vqmp2fvcqjhce5kav14h4a32cg"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kc87fmndb0svoquvb0c0if7492"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kdkui8o4p4ja4itql855ivkoen"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$13: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.DELETE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nfn25p2f8i6rt38dobs02cth6o"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sd11npa5roqc364gsv3go9s2p8"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void sendReport()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9su30247v8g1suosku33hpf02q"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void onNewIntent(android.content.Intent)",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "iggv1pocnab607ls3o2dqmr4i"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void dismissAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "jm9icjat3neh7bn6k0a0ek0p7s"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void onNewIntent(android.content.Intent)",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "s7eo7jh9seqphp9bk4clpmtjjm"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void visitUrl(java.lang.String)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kcuqd5q4g78kof8u5a9pvbsto1"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void visitUrl(java.lang.String)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vpolbbd9ng3jl3bdvajq22896s"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$13: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.DELETE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "md42uidtg8if9kc551hdhublaj"
+        },
+        {
+          "calledAt": "yo.app.activity.BrowseForLandscapeControler: void open()",
+          "sender": "yo.app.activity.BrowseForLandscapeControler",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "bbnufk0tss0hh5bs8eib58vrp8"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void openAlarmClockActivity()",
+          "sender": "yo.app.activity.AppActivity",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o6ab82m48nt2fpfgs8td2aia6k"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void sendReport()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2ldqhfk782np8jbr04kd94os81"
+        },
+        {
+          "calledAt": "yo.app.activity.ShareController: void openSharingIntent(android.net.Uri)",
+          "sender": "yo.app.activity.ShareController",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "pn1fdlehcueor8pgtclgfrt377"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$13: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.DELETE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "as7sui0iagpjaqnkc2ojh6flop"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "84tcptgufhab11lh2h4bg3bie6"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void openDaydreamPicker()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.settings.DREAM_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hpkbjrv0epu4qgqjhnodfo7ksm"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bi4v0ddo7c0mj513v53rev5rnd"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void onNewIntent(android.content.Intent)",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "a1gbttj70064nfcm97ai9v8bng"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "psat1ih2nj6obtki178fegch9a"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void visitUrl(java.lang.String)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "npssb6s20pmdfghbiasqcmnaln"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lmgvo3r4rpmihk4qg8dcoecog5"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void snoozeAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "58mkgrdvlrif9ekl27c17fq326"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "okrsvrqe70vabbu6chdpbgtktf"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ahnggrg2bfuk93t4af8fu116o"
+        },
+        {
+          "calledAt": "yo.app.activity.ShareController: void openSharingIntent(android.net.Uri)",
+          "sender": "yo.app.activity.ShareController",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "175s21d76inpg6p26vkh1ivsad"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void dismissAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "t9gqql889hn1g4dpprtvakha70"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rujp4i7t0q8tmqsp89tq36vh4n"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void openDaydreamPicker()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.settings.DREAM_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "848k5dhq0veencr7kegee5n7hq"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7uat799ppvg2u1bm90bcaal2h7"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void snoozeAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "1d4somld2huofo35dpku9i2r9c"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void openAlarmClockActivity()",
+          "sender": "yo.app.activity.AppActivity",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fe8uk55bspvvfksp2rpebkil4s"
+        },
+        {
+          "calledAt": "yo.app.activity.BrowseForLandscapeControler: void open()",
+          "sender": "yo.app.activity.BrowseForLandscapeControler",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "vq68960cegco1e492bh15f9hb5"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qnpbrhucuo6lvktlmvqo0qcfod"
+        },
+        {
+          "calledAt": "yo.app.activity.ShareController: void openSharingIntent(android.net.Uri)",
+          "sender": "yo.app.activity.ShareController",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "tp3i0l9g0n44ujsi8psrrijn5u"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void openDaydreamPicker()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.settings.DREAM_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gi3peqrojgu3r7onuq5doi5aps"
+        },
+        {
+          "calledAt": "yo.app.activity.BrowseForLandscapeControler: void open()",
+          "sender": "yo.app.activity.BrowseForLandscapeControler",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "k6joj29bg6806e8b8gajen9hle"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void openDaydreamPicker()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.settings.DREAM_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8pl62irrimhu5a9f6cf06a1ec1"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void sendReport()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "a81andqr98b71brj8n302s0912"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "7sg2r17ftu1d95nubur7k2h71q"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void sendReport()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "lfa5cf2pm9o7hr0r4ben9kklq9"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rjfdjd3vv4mrkdeii1oa9cbine"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "do3nk2aoajk81ro3jhi1vbkksm"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void onNewIntent(android.content.Intent)",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "setIntent",
+          "id": "p7kiluonef5tde5h7hl1hkqdll"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void visitUrl(java.lang.String)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "46t30aifv3cmr7mn60bjs4nbr3"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void openAlarmClockActivity()",
+          "sender": "yo.app.activity.AppActivity",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mgmoptngbgbi7srtjgi1ruvg44"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "n6h8umsig2lio0e6i7na1gokfh"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5ik8vl4uml6m6rm6jujo2q5o7"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kedjsabnj63oth81pej5pem8cu"
+        },
+        {
+          "calledAt": "yo.app.activity.ShareController: void openSharingIntent(android.net.Uri)",
+          "sender": "yo.app.activity.ShareController",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rcib0fm2jsa6ccptvibq9rrbk6"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4o8h0kjikrp99nfegt3g5f5nli"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void snoozeAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "nd5hpk1k45v4qpcpcoan7uojt5"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController: void rate()",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6oo2qiqq3a7bvr61qk4j24qndn"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "s018qs0qaejfmags3nncurskbe"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "jjctgne6v29rjk14pjq5dc2m6n"
+        },
+        {
+          "calledAt": "yo.app.activity.BrowseForLandscapeControler: void open()",
+          "sender": "yo.app.activity.BrowseForLandscapeControler",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "7u3gtm9ake6e6a342caq59djcp"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void dismissAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "tl120budu8rudj9055gglh2o2r"
+        },
+        {
+          "calledAt": "yo.app.activity.OverflowMenuController$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)",
+          "sender": "yo.app.activity.OverflowMenuController",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ogg8ofaqsl5pfi60jstun3nscc"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$13: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.DELETE\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vdjlv9ko0o57ajlcc8v8rr3ufb"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "30b2v9mq9odgth31huj9g8lreq"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void openAlarmClockActivity()",
+          "sender": "yo.app.activity.AppActivity",
+          "component": "yo.host.ui.alarm.AlarmListActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qt9ocvugolvsp9qkampqksid68"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void snoozeAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "jedpu78c83v7dklesf8gjm23j4"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity$28: void onClick(android.content.DialogInterface,int)",
+          "sender": "yo.app.activity.AppActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3bsldn781qu9fn3a7o5cc56crt"
+        },
+        {
+          "calledAt": "yo.app.activity.AppActivity: void dismissAlarm()",
+          "sender": "yo.app.activity.AppActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "ben42qdc20v853apturr56bh9d"
+        },
+        {
+          "calledAt": "yo.app.App: void openYoWindowUnlimitedStorePage()",
+          "sender": "yo.app.App",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "n4da9a01ocm6dkrlmphq24cgu0"
+        }
+      ]
+    },
+    "ContentProviders": {
+      "ContentProvider": [
+        {
+          "dbMethod": "query",
+          "calledAt": "yo.app.provider.YoAppContentProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)",
+          "exitOrEntry": "entry"
+        },
+        {
+          "dbMethod": "update",
+          "calledAt": "yo.app.provider.YoAppContentProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])",
+          "exitOrEntry": "entry"
+        },
+        {
+          "dbMethod": "insert",
+          "calledAt": "yo.app.provider.YoAppContentProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)",
+          "exitOrEntry": "entry"
+        },
+        {
+          "dbMethod": "delete",
+          "calledAt": "yo.app.provider.YoAppContentProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])",
+          "exitOrEntry": "entry"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "SET_ALARM",
+        "READ_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK",
+        "ACCESS_FINE_LOCATION",
+        "VIBRATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "VIBRATE",
+        "WAKE_LOCK"
+      ]
+    },
+    "apkFile": "../../../app_repo/bundle/Accurate Weather YoWindow v1.17.4 apkfiles.com.apk",
+    "name": "Accurate Weather YoWindow v1_17_4 apkfiles_com"
+  }
+}

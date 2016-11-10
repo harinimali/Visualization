@@ -1,0 +1,665 @@
+{
+  "application": {
+    "packageName": "com.google.android.calendar",
+    "components": {
+      "Component": [
+            {
+          "type": "activity",
+          "name": "com.android.calendar.EventInfoActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": { "mimeType": "vnd.android.cursor.item/event" },
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.DEFAULT"
+                ]
+              },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.AllInOneActivity",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  { "mimeType": "time/epoch" },
+                  { "host": "com.android.calendar" },
+                  { "scheme": "content" }
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.APP_CALENDAR",
+                  "android.intent.category.DEFAULT"
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.MAIN",
+                  "android.intent.action.VIEW"
+                ],
+                "data": [
+                  { "mimeType": "time/epoch" },
+                  { "host": "com.android.calendar" },
+                  { "scheme": "content" }
+                ],
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.LAUNCHER",
+                  "android.intent.category.APP_CALENDAR",
+                  "android.intent.category.DEFAULT"
+                ]
+              }
+            ]
+          }
+        },
+      
+              {
+                "actions": [
+                  "android.intent.action.VIEW",
+                  "android.intent.action.VIEW"
+                ],
+                "data": { "mimeType": "vnd.android.cursor.item/event" },
+                "categories": [
+                  "android.intent.category.DEFAULT",
+                  "android.intent.category.DEFAULT"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.event.EditEventActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.GoogleCalendarUriIntentFilter",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.VIEW",
+              "data": [
+                {
+                  "scheme": "http",
+                  "host": "www.google.com"
+                },
+                {
+                  "scheme": "https",
+                  "host": "www.google.com"
+                },
+                {
+                  "scheme": "http",
+                  "host": "www.google.com",
+                  "pathPattern": "/calendar/hosted/.*/event"
+                },
+                {
+                  "scheme": "https",
+                  "host": "www.google.com",
+                  "pathPattern": "/calendar/hosted/.*/event"
+                }
+              ],
+              "categories": [
+                "android.intent.category.DEFAULT",
+                "android.intent.category.BROWSABLE"
+              ]
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.selectcalendars.SelectVisibleCalendarsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.selectcalendars.SelectSyncedCalendarsMultiAccountActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.CalendarSettingsActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.SearchActivity",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.SEARCH" }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.alerts.AlertActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.alerts.QuickResponseActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.extensions.AboutActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.android.calendar.extensions.LicenseActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.syncadapters.calendar.AuthNotificationActivity"
+        },
+        {
+          "type": "service",
+          "name": "com.android.calendar.alerts.AlertService"
+        },
+        {
+          "type": "service",
+          "name": "com.android.calendar.alerts.DismissAlarmsService"
+        },
+        {
+          "type": "service",
+          "name": "com.android.calendar.alerts.SnoozeAlarmsService"
+        },
+        {
+          "type": "service",
+          "name": "com.android.calendar.alerts.InitAlarmsService"
+        },
+        {
+          "type": "service",
+          "name": "com.android.calendar.widget.CalendarAppWidgetService",
+          "RequiredPermissions": { "PRM": "BIND_REMOTEVIEWS" }
+        },
+        {
+          "type": "service",
+          "name": "com.android.calendar.AsyncQueryServiceHelper"
+        },
+        {
+          "type": "service",
+          "name": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService",
+          "IntentFilter": {
+            "filter": { "actions": "android.content.SyncAdapter" }
+          }
+        },
+        {
+          "type": "service",
+          "name": "com.google.android.syncadapters.calendar.CalendarSyncAdapterIntentService"
+        },
+        {
+          "type": "receiver",
+          "name": "com.android.calendar.alerts.AlertReceiver",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.EVENT_REMINDER",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.BOOT_COMPLETED",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" }
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.EVENT_REMINDER",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.BOOT_COMPLETED",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" }
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.EVENT_REMINDER",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.BOOT_COMPLETED",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" }
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.EVENT_REMINDER",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.BOOT_COMPLETED",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.android.calendar.widget.CalendarAppWidgetProvider",
+          "IntentFilter": {
+            "filter": {
+              "actions": [
+                "android.appwidget.action.APPWIDGET_UPDATE",
+                "com.google.android.calendar.APPWIDGET_UPDATE"
+              ]
+            }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.android.calendar.widget.CalendarAppWidgetService$CalendarFactory",
+          "IntentFilter": {
+            "filter": [
+              {
+                "actions": [
+                  "android.intent.action.TIMEZONE_CHANGED",
+                  "android.intent.action.DATE_CHANGED",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED",
+                  "com.google.android.calendar.APPWIDGET_SCHEDULED_UPDATE"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" },
+                  { "mimeType": "vnd.android.data/update" }
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.TIMEZONE_CHANGED",
+                  "android.intent.action.DATE_CHANGED",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED",
+                  "com.google.android.calendar.APPWIDGET_SCHEDULED_UPDATE"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" },
+                  { "mimeType": "vnd.android.data/update" }
+                ]
+              },
+              {
+                "actions": [
+                  "android.intent.action.TIMEZONE_CHANGED",
+                  "android.intent.action.DATE_CHANGED",
+                  "android.intent.action.TIME_SET",
+                  "android.intent.action.LOCALE_CHANGED",
+                  "android.intent.action.PROVIDER_CHANGED",
+                  "com.google.android.calendar.APPWIDGET_SCHEDULED_UPDATE"
+                ],
+                "data": [
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" },
+                  { "scheme": "content" },
+                  { "host": "com.android.calendar" },
+                  { "mimeType": "vnd.android.data/update" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver",
+          "IntentFilter": {
+            "filter": { "actions": "android.accounts.LOGIN_ACCOUNTS_CHANGED" }
+          }
+        },
+        {
+          "type": "provider",
+          "name": "com.android.calendar.CalendarRecentSuggestionsProvider"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)",
+          "sender": "com.google.android.gms.internal.u",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Bundle: void writeToParcel(android.os.Parcel,int)>",
+              "sinkCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "o0blfroro6kcuo74mmm5pn6t29"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.AbstractThreadedSyncAdapter: android.os.IBinder getSyncAdapterBinder()>",
+              "sinkCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "SYNCHRONIZATION_DATA"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "b2kf7srgei5r2me7csrdvq9vsp"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)",
+          "sender": "com.google.android.gms.internal.u",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Bundle: void writeToParcel(android.os.Parcel,int)>",
+              "sinkCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "jjhjflak857hgigk8bk9mf29mg"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.AbstractThreadedSyncAdapter: android.os.IBinder getSyncAdapterBinder()>",
+              "sinkCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "SYNCHRONIZATION_DATA"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "kbjkdtl6dikabsslbso5rdbc4l"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver",
+          "component": "com.google.android.syncadapters.calendar.CalendarSyncAdapterIntentService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "stevjku0l16bgosdabsnaipvcs"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.ba$a: com.google.android.gms.internal.u a(android.content.Context,java.lang.String,int)",
+          "sender": "com.google.android.gms.internal.ba",
+          "component": "com.google.android.gms.internal.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "vpsjkm7rhfu9l0l08l2jd0pn8a"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver",
+          "component": "com.google.android.syncadapters.calendar.CalendarSyncAdapterIntentService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "slvidsp646uk0kiqdup07k9o86"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.ba$a: com.google.android.gms.internal.u a(android.content.Context,java.lang.String,int)",
+          "sender": "com.google.android.gms.internal.ba",
+          "component": "com.google.android.gms.internal.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "f4ji1ej7hi64enghlrfl6q8hs6"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)",
+          "sender": "com.google.android.gms.internal.u",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Bundle: void writeToParcel(android.os.Parcel,int)>",
+              "sinkCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "v3t0lkbh59apvrf99jkhpk32bv"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.AbstractThreadedSyncAdapter: android.os.IBinder getSyncAdapterBinder()>",
+              "sinkCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "SYNCHRONIZATION_DATA"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "uaa0lmqvnr7vpbljmnlnete0fk"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver",
+          "component": "com.google.android.syncadapters.calendar.CalendarSyncAdapterIntentService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "4ji6ussgfmda06rrseuvn4hu32"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)",
+          "sender": "com.google.android.gms.internal.u",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Bundle: void writeToParcel(android.os.Parcel,int)>",
+              "sinkCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.gms.internal.u$a: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "np27vl859lvimtk0jfbi06hhi"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.content.AbstractThreadedSyncAdapter: android.os.IBinder getSyncAdapterBinder()>",
+              "sinkCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<com.google.android.syncadapters.calendar.CalendarSyncAdapterService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "SYNCHRONIZATION_DATA"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "gcvum1l9fsdqqh3rdsv4gc8jp0"
+        },
+        {
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "com.google.android.syncadapters.calendar.CalendarSyncAdapterBroadcastReceiver",
+          "component": "com.google.android.syncadapters.calendar.CalendarSyncAdapterIntentService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "h4vbbdra8dd98vlqopas703u1k"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.ba$a: com.google.android.gms.internal.u a(android.content.Context,java.lang.String,int)",
+          "sender": "com.google.android.gms.internal.ba",
+          "component": "com.google.android.gms.internal.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "5gpibunvkvn18kmbsnitkp5mdu"
+        },
+        {
+          "calledAt": "com.google.android.gms.internal.ba$a: com.google.android.gms.internal.u a(android.content.Context,java.lang.String,int)",
+          "sender": "com.google.android.gms.internal.ba",
+          "component": "com.google.android.gms.internal.",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "lsf3utpghd1irvted7aacreshu"
+        }
+      ]
+    },
+    "ContentProviders": {
+      "ContentProvider": [
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.gsf.SubscribedFeeds: boolean manageSubscriptions(android.content.ContentResolver,android.accounts.Account,java.lang.String,java.lang.String,java.util.Collection)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterApiary: java.util.HashSet getCurrentCalendars(android.accounts.Account)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterApiary: void getServerDiffsForFeed(android.accounts.Account,android.content.ContentProviderClient,android.os.Bundle,android.content.SyncResult,java.lang.String,boolean)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "$r7",
+          "dbMethod": "delete",
+          "calledAt": "com.google.android.gsf.SubscribedFeeds: boolean manageSubscriptions(android.content.ContentResolver,android.accounts.Account,java.lang.String,java.lang.String,java.util.Collection)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.gsf.Gservices: java.util.Map getStringsByPrefix(android.content.ContentResolver,java.lang.String[])",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "$r6",
+          "dbMethod": "delete",
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterApiary: void updateCalendarsFromServerFeed(android.accounts.Account,android.content.ContentProviderClient,boolean,android.content.SyncResult)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "delete",
+          "calledAt": "com.google.android.gsf.SubscribedFeeds: boolean manageSubscriptions(android.content.ContentResolver,android.accounts.Account,java.lang.String,java.lang.String,java.util.Collection)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterApiary: java.util.HashSet getExpectedFeeds(android.accounts.Account)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.gsf.Gservices: java.lang.String getString(android.content.ContentResolver,java.lang.String,java.lang.String)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "$r22",
+          "dbMethod": "query",
+          "calledAt": "com.google.android.syncadapters.calendar.CalendarSyncAdapterApiary: void getServerDiffs(android.accounts.Account,android.os.Bundle,android.content.ContentProviderClient,android.content.SyncResult)",
+          "exitOrEntry": "exit"
+        },
+        {
+          "uris": "ANY_URI",
+          "dbMethod": "insert",
+          "calledAt": "com.google.android.gsf.SubscribedFeeds: boolean manageSubscriptions(android.content.ContentResolver,android.accounts.Account,java.lang.String,java.lang.String,java.util.Collection)",
+          "exitOrEntry": "exit"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "GET_ACCOUNTS",
+        "INTERNET",
+        "mail",
+        "USE_CREDENTIALS",
+        "RECEIVE_BOOT_COMPLETED",
+        "READ_SYNC_STATS",
+        "READ_SYNC_SETTINGS",
+        "READ_CALENDAR",
+        "READ_GSERVICES",
+        "GOOGLE_AUTH",
+        "WRITE_SYNC_SETTINGS",
+        "SUBSCRIBED_FEEDS_WRITE",
+        "MANAGE_ACCOUNTS",
+        "WAKE_LOCK",
+        "READ_CONTACTS",
+        "SUBSCRIBED_FEEDS_READ",
+        "VIBRATE",
+        "WRITE_CALENDAR"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "INTERNET",
+        "MANAGE_ACCOUNTS",
+        "GET_ACCOUNTS",
+        "READ_SYNC_SETTINGS",
+        "WRITE_SYNC_SETTINGS",
+        "VIBRATE",
+        "USE_CREDENTIALS"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Google Calendar.apk",
+    "name": "Google Calendar"
+  }
+}

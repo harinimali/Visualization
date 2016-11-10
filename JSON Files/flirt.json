@@ -1,0 +1,496 @@
+{
+  "application": {
+    "packageName": "org.omarsalem.flirt",
+    "components": {
+      "Component": [
+        {
+          "type": "activity",
+          "name": "org.omarsalem.flirt.views.splash.SplashView",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "org.omarsalem.flirt.views.BootstrapActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        },
+        {
+          "type": "service",
+          "name": "org.omarsalem.flirt.service.ChatService"
+        },
+        {
+          "type": "receiver",
+          "name": "org.omarsalem.flirt.service.BootBroadcastReceiver",
+          "IntentFilter": {
+            "filter": { "actions": "android.intent.action.BOOT_COMPLETED" }
+          }
+        },
+        {
+          "type": "receiver",
+          "name": "org.omarsalem.flirt.util.NotificationDeleteReceiver"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "org.omarsalem.flirt.a.d: void a(com.google.android.gms.common.api.Status)",
+          "sender": "org.omarsalem.flirt.a.d",
+          "action": "\"Error\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "4n0un905erge7oa4nifr0erbdj"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.splash.SplashView: void onCreate(android.os.Bundle)",
+          "sender": "org.omarsalem.flirt.views.splash.SplashView",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sgbjlop45a24q6373l8m7fj7gf"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.BootBroadcastReceiver",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "mv0b96qogh43mlao872iukp5jd"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: void c()",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "t99mtejta2fg4i9gfqp2fin4i0"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.d: void a(com.google.android.gms.common.api.Status)",
+          "sender": "org.omarsalem.flirt.a.d",
+          "action": "\"Error\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "eql8hnp99ph27087j5vm5n5k79"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.l: void a(java.lang.Void)",
+          "sender": "org.omarsalem.flirt.views.profile.l",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vhs18umou6ef3o66661o2s9opa"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.d: void a(com.google.android.gms.common.api.Status)",
+          "sender": "org.omarsalem.flirt.a.d",
+          "action": "\"Error\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "ib1p51khfo9gltd11lkjm4amdo"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.b: void onFound(com.google.android.gms.nearby.messages.Message)",
+          "sender": "org.omarsalem.flirt.a.b",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "p0gv64be5llmg79ib7k9k822nc"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.splash.SplashView: void onCreate(android.os.Bundle)",
+          "sender": "org.omarsalem.flirt.views.splash.SplashView",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "25e4jooda3m95m9g93kapu5mll"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Messenger: android.os.IBinder getBinder()>",
+              "sinkCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "u8b24gip2bkcpcr3ki0a19mrp5"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.m: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.m",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "repu1mqvr6it291kpepem4isr3"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.splash.SplashView: void onCreate(android.os.Bundle)",
+          "sender": "org.omarsalem.flirt.views.splash.SplashView",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "j9p8epscbtsgumo0aet0gut55d"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: void c()",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "1jq4og9qqlohqo2nmkadevm91g"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.a: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.a",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "nvl196qcdr8qj636nqiut0h3au"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.BootstrapActivity: void l()",
+          "sender": "org.omarsalem.flirt.views.BootstrapActivity",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "g7r9k49ehqns609vt3c4jq2aa2"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.a: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.a",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "p9rl93q159j8npn9i6fshvf89g"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.BootstrapActivity: void l()",
+          "sender": "org.omarsalem.flirt.views.BootstrapActivity",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "ej2ftmue9i356qlou16cit5k77"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.b.a: void onResume()",
+          "sender": "org.omarsalem.flirt.views.b.a",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "hrai2k9stj4um0k9bh3di5r8cl"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.m: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.m",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "ojmfarirh53jh03kf8ntf053cu"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Messenger: android.os.IBinder getBinder()>",
+              "sinkCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "u48jm96h3nqknm70pd50qn8af7"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Messenger: android.os.IBinder getBinder()>",
+              "sinkCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "ee5sq4vue3vp2re0aufk9u4dm0"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "component": "org.omarsalem.flirt.views.b.a",
+          "extra": "false",
+          "sensitiveData": "false",
+          "sensitiveFlows": {
+            "Flow": {
+              "sink": "<android.os.Messenger: android.os.IBinder getBinder()>",
+              "sinkCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "source": "Returned Value",
+              "sourceCalledAt": "<org.omarsalem.flirt.service.ChatService: android.os.IBinder onBind(android.content.Intent)>",
+              "sinkDomain": "IPC",
+              "sourceDomain": "NO_CATEGORY"
+            }
+          },
+          "consumerMethod": "binder",
+          "id": "m268n5uvcf4ues351ja6f60jf0"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.b: void onFound(com.google.android.gms.nearby.messages.Message)",
+          "sender": "org.omarsalem.flirt.a.b",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "9bumurc9blqedipihob2g1ufcp"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.b.a: void onResume()",
+          "sender": "org.omarsalem.flirt.views.b.a",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "7l4iak7b1fiouee43dr0ghim5i"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.b.a: void onResume()",
+          "sender": "org.omarsalem.flirt.views.b.a",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "7abjvh6lmq15pa1hndggqk8ue3"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.l: void a(java.lang.Void)",
+          "sender": "org.omarsalem.flirt.views.profile.l",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "so75lajra1jomljjs7juustle8"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.l: void a(java.lang.Void)",
+          "sender": "org.omarsalem.flirt.views.profile.l",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "o4eog91e3akk32ovdmv7c06kto"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.splash.SplashView: void onCreate(android.os.Bundle)",
+          "sender": "org.omarsalem.flirt.views.splash.SplashView",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "nvklibirtpturtdjlhvlbesd7n"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.BootBroadcastReceiver",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "28mfhrnm8o25o8kr5vo7b169bg"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.b: void onFound(com.google.android.gms.nearby.messages.Message)",
+          "sender": "org.omarsalem.flirt.a.b",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "q499k77utst2kq1vd8fp4gdpgq"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.m: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.m",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "592en8m3q87nbd28nqc7maeojs"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.BootBroadcastReceiver",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "g2hv0pcrf295gh1oaq6edojonq"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.d: void a(com.google.android.gms.common.api.Status)",
+          "sender": "org.omarsalem.flirt.a.d",
+          "action": "\"Error\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "k6caghe5cgr08ttajjlqcru226"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.b.a: void onResume()",
+          "sender": "org.omarsalem.flirt.views.b.a",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "bindService",
+          "id": "nocad2ov68bfumb6h6cb8vjv45"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.m: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.m",
+          "action": "\"android.media.action.IMAGE_CAPTURE\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "sbb68599u94r1i24bii2m0crft"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.a: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.a",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "arf9asdft8d1qn4gms0qhk4pho"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: void c()",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "sc99naf0lrl743uui8v0vg8pvg"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.l: void a(java.lang.Void)",
+          "sender": "org.omarsalem.flirt.views.profile.l",
+          "component": "org.omarsalem.flirt.views.BootstrapActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1ioh1gjep74thq48hkfrlpuace"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.ChatService: void c()",
+          "sender": "org.omarsalem.flirt.service.ChatService",
+          "action": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "evs3gof5aqbvt1m878ukjpsvqm"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.a.b: void onFound(com.google.android.gms.nearby.messages.Message)",
+          "sender": "org.omarsalem.flirt.a.b",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "sendBroadcast",
+          "id": "o0bv7ptkil9uep6v5aqpqiu8pk"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.BootstrapActivity: void l()",
+          "sender": "org.omarsalem.flirt.views.BootstrapActivity",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "611b089m7kkqq3b5ujkc1qpftf"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.BootstrapActivity: void l()",
+          "sender": "org.omarsalem.flirt.views.BootstrapActivity",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "e2hmhvqbev28bkjuuno9c89895"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.views.profile.a: void a()",
+          "sender": "org.omarsalem.flirt.views.profile.a",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivityForResult",
+          "id": "8utu9ophv40ofpq4c0ceb417b1"
+        },
+        {
+          "calledAt": "org.omarsalem.flirt.service.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)",
+          "sender": "org.omarsalem.flirt.service.BootBroadcastReceiver",
+          "component": "org.omarsalem.flirt.service.ChatService",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startService",
+          "id": "jr5bq9brtmmof8ldq16tlg9m89"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "GET_ACCOUNTS",
+        "READ_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "USE_CREDENTIALS",
+        "VIBRATE",
+        "RECEIVE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "ACCESS_NETWORK_STATE",
+        "VIBRATE"
+      ]
+    },
+    "apkFile": "../../../app_repo/bundle/Flirt apkfiles.com.apk",
+    "name": "Flirt apkfiles_com"
+  }
+}

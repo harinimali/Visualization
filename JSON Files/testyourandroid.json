@@ -1,0 +1,601 @@
+{
+  "application": {
+    "packageName": "hibernate.v2.testyourandroid",
+    "components": {
+      "Component": [
+          {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.MainActivity",
+          "IntentFilter": {
+            "filter": {
+              "actions": "android.intent.action.MAIN",
+              "categories": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity"
+        },
+        
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestColorActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestRingActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestSensorLightActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestCameraActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestCameraFrontActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestFlashActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestDrawActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestTouchActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.InfoActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestSdCardActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.InfoCPUActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.InfoAndroidVersionActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.InfoBatteryActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.InfoCameraActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestWifiActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestSensorAccelerometerActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestGPSActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestNFCActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestSensorProximityActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestBTActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.InfoGSMActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.MonitorActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestSensorGravityActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestSensorPressureActivity"
+        },
+        {
+          "type": "activity",
+          "name": "hibernate.v2.testyourandroid.TestCompassActivity"
+        }
+      ]
+    },
+    "newIntents": {
+      "Intent": [
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void feedback(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.SENDTO\"",
+          "scheme": "hasValue",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "iho0c9lkscr90mg536ghootho3"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "kk6ldolpss30m9i6uctjtob2s5"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void more(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "72bn24imcm7an0do0kqaejl45o"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ia3qag9lc7ftiv0v7oqob98btb"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void more(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vrj1pgvo9mfmrnnh6ufe7egb9d"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3k63ggjcbgttfiqa3l0c3p75kt"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void more(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4504qisf8qj2ko19prmeeoms05"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "c52jcm51sbpup769b5jrsmd6tr"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity$6: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "qgkf18a6c57jrrr2g2m1pnu0es"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void more(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fkkmvhn6ih5nah110fuf9rbvuf"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4f9gh074cu80k1lq5slfhpgb6q"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1bm7ehql0c0vgc03j0ucv17fm5"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "4eb804lutg3kdn6mro90fuuvgp"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "fs9s5moihqg4aln1hs3miotsjp"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "bn6c2rod5khv6bmeej6is5clgo"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8efie4a48t5se8mt2cnmfkekr9"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "vrd2q1vi1rr8v4ida707ehd08l"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3pj06dcm5gpgvf6vbhdk3hdihm"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void share(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p3stamnhqivuorn8dvqpattlve"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "1fu4tajinolhne1mencq9dppm7"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "p181pt1roqfur9fbgb188ntemg"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rb9m5g5g4i1g9ghq487krec8u4"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "69pfcpt2ueb96fnsh9ojqs7bqs"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity$6: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9968mcch5qke586tars5m4n3p"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void share(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "58p3u5que0hnb57ghn1vdmjccv"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "sgbjdrmt5hgnuqoge74ml52npl"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "gv3tpqpu20f7e0p1mahreinv1r"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "8v1hcgbs7q1n278douasgo22ar"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "rlnoh4ke51ok7emfib5aeqmdkf"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "mfhkhhtolfi7vn7o0espr0rjt2"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity$4: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "9kge1pt0lcl7nod1fp3uj1u9lt"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity$6: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "5enl2jtrl0lt7ujbnlr2nedi94"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity$6: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.VIEW\"",
+          "scheme": "hasValue",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ohh5a8a6bli24fmo5mcpeuc662"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hq2blq6s8qi5l79lkob5vr54u7"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void feedback(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.SENDTO\"",
+          "scheme": "hasValue",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "c4d9eamf879k9kfqo00rsbdod4"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "drgmhgqkpp2kj095photk51jm1"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "cmmk1pv9cnl196iqpiv5bglorc"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.NFC_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t0qokjl0h3ju59squvd2k943qu"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void share(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "ce70js5cf8b171iub41mert7r7"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void share(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "acqet0pssfe6b289kpdvg5rci2"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "b0gb967813mq226nfkl250d19u"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestNFCActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestNFCActivity",
+          "action": "\"android.settings.WIRELESS_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "t11rd1ivoi4c5rl45uhnjacefh"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void feedback(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.SENDTO\"",
+          "scheme": "hasValue",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "hkt8nuo189lasg2828l0cucclo"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "2nmmdc0gcifdul113ofmj9co2"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestWifiActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestWifiActivity",
+          "action": "\"android.settings.WIFI_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "3apmpm1sj243lhoc7n9q6i5r5v"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity$2: void onClick(android.content.DialogInterface,int)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "6m8m9mml0af7k9841m0vlo5sj9"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.TestGPSActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)",
+          "sender": "hibernate.v2.testyourandroid.TestGPSActivity",
+          "action": "\"android.settings.LOCATION_SOURCE_SETTINGS\"",
+          "extra": "false",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "24j0ktq2vhdnqh9q7n97ehg1qe"
+        },
+        {
+          "calledAt": "hibernate.v2.testyourandroid.MainActivity: void feedback(android.view.View)",
+          "sender": "hibernate.v2.testyourandroid.MainActivity",
+          "action": "\"android.intent.action.SENDTO\"",
+          "scheme": "hasValue",
+          "extra": "true",
+          "sensitiveData": "false",
+          "consumerMethod": "startActivity",
+          "id": "263ggtga88rpkhlutb6fl9ltbq"
+        }
+      ]
+    },
+    "usesPermissions": {
+      "permission": [
+        "WRITE_EXTERNAL_STORAGE",
+        "FLASHLIGHT",
+        "INTERNET",
+        "CAMERA",
+        "NFC",
+        "ACCESS_FINE_LOCATION",
+        "CHANGE_CONFIGURATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_NETWORK_STATE",
+        "READ_PHONE_STATE",
+        "CHANGE_WIFI_STATE",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "ACCESS_WIFI_STATE"
+      ]
+    },
+    "actuallyUsesPermissions": {
+      "permission": [
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "READ_PHONE_STATE",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "NFC"
+      ]
+    },
+    "apkFile": "../../../app_repo/appbundle/Test Your Android.apk",
+    "name": "Test Your Android"
+  }
+}
